@@ -1,0 +1,62 @@
+{
+    "boundarySize": { "h": 32, "w": 32 },
+    "groups": [
+        {
+            "key": 0,
+            "value": {
+                "frames": [
+                    {
+                        "bitmapSize": { "h": 31, "w": 32 },
+                        "bitmapOffset": { "x": 0, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 1 }
+                    },
+                    {
+                        "bitmapSize": { "h": 30, "w": 32 },
+                        "bitmapOffset": { "x": 32, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 2 }
+                    },
+                    {
+                        "bitmapSize": { "h": 32, "w": 32 },
+                        "bitmapOffset": { "x": 64, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 0 }
+                    },
+                    {
+                        "bitmapSize": { "h": 25, "w": 32 },
+                        "bitmapOffset": { "x": 96, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 5 }
+                    },
+                    {
+                        "bitmapSize": { "h": 31, "w": 32 },
+                        "bitmapOffset": { "x": 128, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 1 }
+                    },
+                    {
+                        "bitmapSize": { "h": 31, "w": 32 },
+                        "bitmapOffset": { "x": 160, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 1 }
+                    },
+                    {
+                        "bitmapSize": { "h": 28, "w": 32 },
+                        "bitmapOffset": { "x": 192, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 4 }
+                    },
+                    {
+                        "bitmapSize": { "h": 27, "w": 32 },
+                        "bitmapOffset": { "x": 224, "y": 0 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 0, "y": 4 }
+                    }
+                ],
+                "params": {}
+            }
+        }
+    ],
+    "mask": {}
+}

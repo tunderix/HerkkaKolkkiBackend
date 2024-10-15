@@ -1,0 +1,19 @@
+{
+    "boundarySize": { "h": 32, "w": 32 },
+    "groups": [
+        {
+            "key": 0,
+            "value": {
+                "frames": [
+                    {
+                        "bitmapSize": { "h": 8, "w": 8 },
+                        "boundarySize": { "h": 32, "w": 32 },
+                        "padding": { "x": 12, "y": 11 }
+                    }
+                ],
+                "params": {}
+            }
+        }
+    ],
+    "mask": {}
+}

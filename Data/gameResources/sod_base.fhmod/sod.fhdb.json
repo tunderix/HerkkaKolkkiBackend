@@ -1,0 +1,454 @@
+[
+    {
+        "scope": "artifacts",
+        "records": {
+            "hota.artifact.battleMachine.cannon": null,
+
+            "hota.artifact.sword.att7": null,
+            "hota.artifact.shield.def7": null,
+            "hota.artifact.helm.int6": null,
+            "hota.artifact.torso.spl6": null,
+
+            "hota.artifact.misc.unluck1a": null,
+            "hota.artifact.misc.unluck1b": null,
+            "hota.artifact.misc.unluck2": null,
+            "hota.artifact.misc.unmorale1": null,
+            "hota.artifact.ring.unmorale1": null,
+            "hota.artifact.neck.unmorale2": null,
+
+            "hota.artifact.misc.interfere": null,
+            "hota.artifact.ring.interfere": null,
+            "hota.artifact.torso.interfere": null,
+
+            "hota.artifact.boots.pathfind": null,
+
+            "hota.artifact.cape.noMagic12": null,
+            "hota.artifact.ring.noResurrect": null,
+
+            "hota.artifact.misc.summon": null,
+            "hota.artifact.complex.diplomacy": null,
+
+            "hota.artifact.complex.resist": null,
+            "hota.artifact.complex.buff": null,
+            "hota.artifact.complex.gold": null
+        }
+    },
+    {
+        "scope": "factions",
+
+        "records": {
+            "sod.faction.rampart": {
+                "warriorClass": {
+                    "skills": {
+                        "hota.skill.interfere": null
+                    }
+                }
+            },
+
+            "sod.faction.inferno": {
+                "warriorClass": {
+                    "skills": {
+                        "hota.skill.interfere": null
+                    }
+                }
+            },
+
+            "sod.faction.dungeon": {
+                "warriorClass": {
+                    "skills": {
+                        "hota.skill.interfere": null
+                    }
+                }
+            },
+
+            "sod.faction.stronghold": {
+                "warriorClass": {
+                    "skills": {
+                        "hota.skill.interfere": null
+                    }
+                },
+                "mageClass": {
+                    "skills": {
+                        "hota.skill.interfere": null
+                    }
+                }
+            },
+
+            "sod.faction.conflux": {
+                "nativeTerrain": "sod.terrain.grass",
+                "warriorClass": {
+                    "skills": {
+                        "hota.skill.interfere": null
+                    }
+                }
+            },
+            "hota.faction.cove": null
+        }
+    },
+
+    {
+        "scope": "heroes",
+        "records": {
+            "hota.hero.cove.plp01": null,
+            "hota.hero.cove.plp02": null,
+            "hota.hero.cove.plp03": null,
+            "hota.hero.cove.plp05": null,
+            "hota.hero.cove.plp17": null,
+            "hota.hero.cove.plp06": null,
+            "hota.hero.cove.plp13": null,
+            "hota.hero.cove.plp15": null,
+            "hota.hero.cove.plp16": null,
+            "hota.hero.cove.plp04": null,
+            "hota.hero.cove.plp07": null,
+            "hota.hero.cove.plp08": null,
+            "hota.hero.cove.plp09": null,
+            "hota.hero.cove.plp10": null,
+            "hota.hero.cove.plp11": null,
+            "hota.hero.cove.plp12": null,
+            "hota.hero.cove.plp14": null,
+            "hota.hero.campaign.cvc01": null,
+            "hota.hero.campaign.cvc02": null,
+
+            "sod.hero.rampart.rn017": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.luck", "level": 0 },
+                    { "skillId": "sod.skill.resistance", "level": 0 }
+                ]
+            },
+            "sod.hero.rampart.rn022": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.resistance", "level": 0 },
+                    { "skillId": "sod.skill.pathfind", "level": 0 }
+                ]
+            },
+            "sod.hero.tower.al037": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.scholar", "level": 0 },
+                    { "skillId": "sod.skill.resistance", "level": 0 }
+                ]
+            },
+            "sod.hero.inferno.dm059": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.resistance", "level": 0 },
+                    { "skillId": "sod.skill.tactics", "level": 0 }
+                ]
+            },
+            "sod.hero.necropolis.dk064": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.necromancy", "level": 0 },
+                    { "skillId": "sod.skill.resistance", "level": 0 }
+                ]
+            },
+            "sod.hero.dungeon.ov083": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.leadership", "level": 0 },
+                    { "skillId": "sod.skill.resistance", "level": 0 }
+                ]
+            },
+            "sod.hero.stronghold.br101": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.offense", "level": 0 },
+                    { "skillId": "sod.skill.resistance", "level": 0 }
+                ]
+            },
+            "sod.hero.stronghold.bm111": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.wisdom", "level": 0 },
+                    { "skillId": "sod.skill.resistance", "level": 0 }
+                ]
+            },
+            "sod.hero.fortress.bs112": {
+                "secondarySkills": [
+                    { "skillId": "sod.skill.armourer", "level": 0 },
+                    { "skillId": "sod.skill.resistance", "level": 0 }
+                ]
+            },
+
+            "sod.hero.castle.kx003": null,
+            "sod.hero.fortress.wx122": null,
+            "sod.hero.rampart.rx020": null,
+            "sod.hero.necropolis.dx071": null
+        }
+    },
+
+    {
+        "scope": "mapBanks",
+        "records": {
+            "hota.map.blackTower": null,
+            "hota.map.mansion": null,
+            "hota.map.beholderSanctuary": null,
+            "hota.map.templeSea": null,
+            "hota.map.churchyard": null,
+            "hota.map.experimentalShop": null,
+            "hota.map.wolfRaiderPicket": null,
+            "hota.map.vermilionTower": null,
+            "hota.map.pirateCave": null,
+            "hota.map.ivoryTower": null,
+            "hota.map.spit": null,
+            "hota.map.ruins": null
+        }
+    },
+
+    {
+        "scope": "skills",
+        "records": {
+            "hota.skill.interfere": null
+        }
+    },
+
+    {
+        "scope": "specialities",
+        "records": {
+            "hota.speciality.skill.interfere": null,
+            "hota.speciality.cannon": null,
+            "hota.speciality.skill.interfere": null,
+            "hota.speciality.unit.stormbird": null,
+            "hota.speciality.unit.crewMate": null,
+            "hota.speciality.unit.pirate": null,
+            "hota.speciality.unit.nimph": null,
+            "hota.speciality.unit.sorceress": null,
+            "hota.speciality.unit.nix": null,
+            "hota.speciality.unitUpgrade.seawolf": null
+        }
+    },
+
+    {
+        "scope": "terrains",
+        "records": {
+            "hota.terrain.highland": null,
+            "hota.terrain.wasteland": null,
+            "hota.terrain.crackedIce": null,
+            "hota.terrain.dunes": null,
+            "hota.terrain.gloryFields": null
+        }
+    },
+
+    {
+        "scope": "units",
+        "records": {
+            "hota.unit.nimph": null,
+            "hota.unit.oceanid": null,
+            "hota.unit.crewMate": null,
+            "hota.unit.seaMan": null,
+            "hota.unit.pirate": null,
+            "hota.unit.corsair": null,
+            "hota.unit.seawolf": null,
+            "hota.unit.stormbird": null,
+            "hota.unit.assid": null,
+            "hota.unit.seaWitch": null,
+            "hota.unit.sorceress": null,
+            "hota.unit.nix": null,
+            "hota.unit.nixWarrior": null,
+            "hota.unit.seaSerpent": null,
+            "hota.unit.haspid": null,
+
+            "hota.unit.leprechaun": null,
+            "hota.unit.satyr": null,
+            "hota.unit.fangarm": null,
+            "hota.unit.steelGolem": null,
+
+            "hota.unit.cannon": null
+        }
+    },
+
+    {
+        "scope": "factions",
+        "uiOnly": true,
+        "records": {
+            "sod.faction.castle": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch00",
+                        "battleSpriteFemale": "ch00",
+                        "adventureSpriteMale": "ah00_",
+                        "adventureSpriteFemale": "ah00_"
+                    }
+                },
+
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch01",
+                        "battleSpriteFemale": "ch01",
+                        "adventureSpriteMale": "ah01_",
+                        "adventureSpriteFemale": "ah01_"
+                    }
+                }
+            },
+
+            "sod.faction.rampart": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch02",
+                        "battleSpriteFemale": "ch02",
+                        "adventureSpriteMale": "ah02_",
+                        "adventureSpriteFemale": "ah02_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch03",
+                        "battleSpriteFemale": "ch03",
+                        "adventureSpriteMale": "ah03_",
+                        "adventureSpriteFemale": "ah03_"
+                    }
+                }
+            },
+
+            "sod.faction.tower": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch04",
+                        "battleSpriteFemale": "ch04",
+                        "adventureSpriteMale": "ah04_",
+                        "adventureSpriteFemale": "ah04_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch05",
+                        "battleSpriteFemale": "ch05",
+                        "adventureSpriteMale": "ah05_",
+                        "adventureSpriteFemale": "ah05_"
+                    }
+                }
+            },
+
+            "sod.faction.inferno": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch06",
+                        "battleSpriteFemale": "ch06",
+                        "adventureSpriteMale": "ah06_",
+                        "adventureSpriteFemale": "ah06b_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch07b",
+                        "battleSpriteFemale": "ch07",
+                        "adventureSpriteMale": "ah07_",
+                        "adventureSpriteFemale": "ah07b_"
+                    }
+                }
+            },
+
+            "sod.faction.necropolis": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch08",
+                        "battleSpriteFemale": "ch08",
+                        "adventureSpriteMale": "ah08_",
+                        "adventureSpriteFemale": "ah08b_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch09",
+                        "battleSpriteFemale": "ch09",
+                        "adventureSpriteMale": "ah09_",
+                        "adventureSpriteFemale": "ah09_"
+                    }
+                }
+            },
+
+            "sod.faction.dungeon": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch010",
+                        "battleSpriteFemale": "ch010",
+                        "adventureSpriteMale": "ah10_",
+                        "adventureSpriteFemale": "ah10_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch011",
+                        "battleSpriteFemale": "ch11",
+                        "adventureSpriteMale": "ah11_",
+                        "adventureSpriteFemale": "ah11_"
+                    }
+                }
+            },
+
+            "sod.faction.stronghold": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch013",
+                        "battleSpriteFemale": "ch012",
+                        "adventureSpriteMale": "ah13_",
+                        "adventureSpriteFemale": "ah12_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch013",
+                        "battleSpriteFemale": "ch012",
+                        "adventureSpriteMale": "ah13_",
+                        "adventureSpriteFemale": "ah12_"
+                    }
+                }
+            },
+
+            "sod.faction.fortress": {
+                "untranslatedName": "Fortress",
+                "nativeTerrain": "sod.terrain.swamp",
+                "goesAfterId": "sod.faction.stronghold",
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch014",
+                        "battleSpriteFemale": "ch014",
+                        "adventureSpriteMale": "ah14_",
+                        "adventureSpriteFemale": "ah14_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch015",
+                        "battleSpriteFemale": "ch015",
+                        "adventureSpriteMale": "ah15_",
+                        "adventureSpriteFemale": "ah15_"
+                    }
+                }
+            },
+
+            "sod.faction.conflux": {
+                "warriorClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch16",
+                        "battleSpriteFemale": "ch16",
+                        "adventureSpriteMale": "ah16_",
+                        "adventureSpriteFemale": "ah16_"
+                    }
+                },
+                "mageClass": {
+                    "pres": {
+                        "battleSpriteMale": "ch17",
+                        "battleSpriteFemale": "ch17",
+                        "adventureSpriteMale": "ah17_",
+                        "adventureSpriteFemale": "ah17_"
+                    }
+                }
+            }
+        }
+    },
+
+    {
+        "scope": "dwellings",
+
+        "records": {
+            "hota.dw.nimph": null,
+            "hota.dw.crewMate": null,
+            "hota.dw.pirate": null,
+            "hota.dw.stormbird": null,
+            "hota.dw.seaWitch": null,
+            "hota.dw.nix": null,
+            "hota.dw.seaSerpent": null,
+
+            "hota.dw.leprechaun": null,
+            "hota.dw.satyr": null,
+            "hota.dw.fangarm": null,
+
+            "hota.dw.cannonBlacksmith": null
+        }
+    }
+]

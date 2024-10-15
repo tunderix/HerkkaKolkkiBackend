@@ -1,0 +1,330 @@
+[
+    {
+        "scope": "terrains",
+        "uiOnly": true,
+
+        "records": {
+            "sod.terrain.dirt": {
+                "pres": {
+                    "order": 1,
+                    "minimapUnblocked": [82, 56, 8],
+                    "minimapBlocked": [57, 40, 8],
+                    "music": "dirt",
+                    "backgroundsBattle": ["cmbkdrmt", "cmbkdrtr", "cmbkdrdd"],
+                    "defFile": "dirttl",
+                    "sandBorderTilesOffset": 0,
+                    "mixedBorderTilesOffset": 20,
+                    "specialBorderTilesOffset": 45,
+                    "centerTilesOffset": 21,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 8,
+                    "borderCounts": {
+                        "TL": 4,
+                        "L": 4,
+                        "T": 4,
+                        "BR": 4,
+                        "TLS": 2,
+                        "BRS": 2
+                    },
+                    "borderMixedCounts": {
+                        "Mixed_DNND": 0,
+                        "Mixed_DNNS": 0,
+                        "Mixed_SNNS": 1
+                    },
+                    "borderSpecialCounts": {
+                        "Special_DDDD": 0,
+                        "Special_SSSS": 1,
+                        "Special_DDDS": 0,
+                        "Special_SSSD": 0,
+                        "Special_NSSD": 0,
+                        "Special_NDDS": 0
+                    }
+                }
+            },
+            "sod.terrain.sand": {
+                "pres": {
+                    "order": 2,
+                    "minimapUnblocked": [222, 207, 140],
+                    "minimapBlocked": [165, 158, 107],
+                    "music": "sand",
+                    "backgroundsBattle": ["cmbkbch", "cmbkdes"],
+                    "defFile": "sandtl",
+                    "centerTilesOffset": 0,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 10
+                }
+            },
+            "sod.terrain.grass": {
+                "pres": {
+                    "order": 3,
+                    "minimapUnblocked": [0, 65, 0],
+                    "minimapBlocked": [0, 48, 0],
+                    "music": "grass",
+                    "backgroundsBattle": ["cmbkgrmt", "cmbkgrtr"],
+                    "defFile": "grastl",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 20,
+                    "mixedBorderTilesOffset": 40,
+                    "specialBorderTilesOffset": 73,
+                    "centerTilesOffset": 49,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 20
+                }
+            },
+            "sod.terrain.snow": {
+                "pres": {
+                    "order": 3,
+                    "minimapUnblocked": [181, 199, 198],
+                    "minimapBlocked": [140, 158, 156],
+                    "music": "snow",
+                    "backgroundsBattle": ["cmbksntr", "cmbksnmt"],
+                    "defFile": "snowtl",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 20,
+                    "mixedBorderTilesOffset": 40,
+                    "specialBorderTilesOffset": 73,
+                    "centerTilesOffset": 49,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 4
+                }
+            },
+            "sod.terrain.swamp": {
+                "pres": {
+                    "order": 5,
+                    "minimapUnblocked": [74, 134, 107],
+                    "minimapBlocked": [33, 89, 66],
+                    "music": "swamp",
+                    "backgroundsBattle": ["cmbkswmp", "cmbkswdv", "cmbkswhl"],
+                    "defFile": "swmptl",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 20,
+                    "mixedBorderTilesOffset": 40,
+                    "specialBorderTilesOffset": 73,
+                    "centerTilesOffset": 49,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 20
+                }
+            },
+            "sod.terrain.rough": {
+                "pres": {
+                    "order": 6,
+                    "minimapUnblocked": [132, 113, 49],
+                    "minimapBlocked": [99, 81, 33],
+                    "music": "rough",
+                    "backgroundsBattle": ["cmbkrgh"],
+                    "defFile": "rougtl",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 20,
+                    "mixedBorderTilesOffset": 40,
+                    "specialBorderTilesOffset": 73,
+                    "centerTilesOffset": 49,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 14
+                }
+            },
+            "sod.terrain.subterra": {
+                "pres": {
+                    "order": 7,
+                    "minimapUnblocked": [132, 48, 0],
+                    "minimapBlocked": [90, 8, 0],
+                    "music": "underground",
+                    "backgroundsBattle": ["cmbksub"],
+                    "defFile": "subbtl",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 20,
+                    "mixedBorderTilesOffset": 40,
+                    "specialBorderTilesOffset": 73,
+                    "centerTilesOffset": 49,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 18
+                }
+            },
+            "sod.terrain.lava": {
+                "pres": {
+                    "order": 8,
+                    "minimapUnblocked": [74, 73, 74],
+                    "minimapBlocked": [41, 40, 41],
+                    "music": "lava",
+                    "backgroundsBattle": ["cmbklava", "cmbklvst"],
+                    "defFile": "lavatl",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 20,
+                    "mixedBorderTilesOffset": 40,
+                    "specialBorderTilesOffset": 73,
+                    "centerTilesOffset": 49,
+                    "centerTilesCount": 24,
+                    "centerTilesClearCount": 14
+                }
+            },
+            "sod.terrain.water": {
+                "pres": {
+                    "order": 9,
+                    "minimapUnblocked": [8, 81, 148],
+                    "minimapBlocked": [0, 42, 108],
+                    "music": "water",
+                    "backgroundsBattle": ["cmbkboat", "cmbkdeck"],
+                    "defFile": "watrtl",
+                    "sandBorderTilesOffset": 0,
+                    "centerTilesOffset": 20,
+                    "centerTilesCount": 13
+                }
+            },
+            "sod.terrain.rock": {
+                "pres": {
+                    "order": 10,
+                    "isObstacle": true,
+                    "minimapUnblocked": [0, 0, 0],
+                    "minimapBlocked": [0, 0, 0],
+                    "music": "underground",
+                    "defFile": "rocktl",
+                    "backgroundsBattle": [],
+                    "sandBorderTilesOffset": 8,
+                    "centerTilesOffset": 0,
+                    "centerTilesCount": 8,
+                    "borderCounts": {
+                        "TL": 2,
+                        "L": 2,
+                        "T": 2,
+                        "BR": 2,
+                        "TLS": 2,
+                        "BRS": 2
+                    },
+                    "hasRotations": true
+                }
+            },
+
+            "hota.terrain.highland": {
+                "pres": {
+                    "order": 20,
+                    "minimapUnblocked": [41, 115, 23],
+                    "minimapBlocked": [34, 82, 16],
+                    "music": "highlands",
+                    "backgroundsBattle": ["cmbkhlmt"],
+                    "defFile": "highlands",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 34,
+                    "mixedBorderTilesOffset": 68,
+                    "specialBorderTilesOffset": 118,
+                    "centerTilesOffset": 77,
+                    "centerTilesCount": 41,
+                    "centerTilesClearCount": 24,
+                    "borderCounts": {
+                        "TL": 6,
+                        "L": 8,
+                        "T": 8,
+                        "BR": 6,
+                        "TLS": 3,
+                        "BRS": 3
+                    }
+                }
+            },
+
+            "hota.terrain.wasteland": {
+                "pres": {
+                    "order": 21,
+                    "minimapUnblocked": [189, 90, 8],
+                    "minimapBlocked": [156, 65, 8],
+                    "music": "wasteland",
+                    "backgroundsBattle": ["cmbkwstp"],
+                    "defFile": "wastelands",
+                    "dirtBorderTilesOffset": 0,
+                    "sandBorderTilesOffset": 34,
+                    "mixedBorderTilesOffset": 68,
+                    "specialBorderTilesOffset": 73,
+                    "centerTilesOffset": 77,
+                    "centerTilesCount": 41,
+                    "centerTilesClearCount": 24,
+                    "borderCounts": {
+                        "TL": 6,
+                        "L": 8,
+                        "T": 8,
+                        "BR": 6,
+                        "TLS": 3,
+                        "BRS": 3
+                    }
+                }
+            },
+
+            "sod.terrain.magicPlains": {
+                "pres": {
+                    "order": 30,
+                    "backgroundsBattle": ["cmbkmag"]
+                }
+            },
+
+            "sod.terrain.fieryFields": {
+                "pres": {
+                    "order": 31,
+                    "backgroundsBattle": ["cmbkff"]
+                }
+            },
+            "sod.terrain.magicClouds": {
+                "pres": {
+                    "order": 32,
+                    "backgroundsBattle": ["cmbkmc"]
+                }
+            },
+            "sod.terrain.rockyGround": {
+                "pres": {
+                    "order": 33,
+                    "backgroundsBattle": ["cmbkrk"]
+                }
+            },
+            "sod.terrain.lucidPools": {
+                "pres": {
+                    "order": 34,
+                    "backgroundsBattle": ["cmbklp"]
+                }
+            },
+
+            "sod.terrain.favorableWinds": {
+                "pres": {
+                    "order": 35,
+                    "backgroundsBattle": ["cmbkboat", "cmbkdeck"]
+                }
+            },
+            "sod.terrain.holyGround": {
+                "pres": {
+                    "order": 36,
+                    "backgroundsBattle": ["cmbkhg"]
+                }
+            },
+            "sod.terrain.cloverField": {
+                "pres": {
+                    "order": 37,
+                    "backgroundsBattle": ["cmbkcf"]
+                }
+            },
+            "sod.terrain.evilFog": {
+                "pres": {
+                    "order": 38,
+                    "backgroundsBattle": ["cmbkef"]
+                }
+            },
+            "sod.terrain.cursedGround": {
+                "pres": {
+                    "order": 39,
+                    "backgroundsBattle": ["cmbkcur"]
+                }
+            },
+            "hota.terrain.crackedIce": {
+                "pres": {
+                    "order": 50,
+                    "backgroundsBattle": ["cmbkice"]
+                }
+            },
+            "hota.terrain.dunes": {
+                "pres": {
+                    "order": 51,
+                    "backgroundsBattle": ["cmbkdun"]
+                }
+            },
+            "hota.terrain.gloryFields": {
+                "pres": {
+                    "order": 52,
+                    "backgroundsBattle": ["cmbkflgl"]
+                }
+            }
+        }
+    }
+]

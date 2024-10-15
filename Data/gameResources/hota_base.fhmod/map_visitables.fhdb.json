@@ -1,0 +1,547 @@
+[
+    {
+        "scope": "mapVisitables",
+        "compactCols": ["attr", "value", "frequency", "objectDefs"],
+
+        "records": {
+            "sod.visitable.arena": ["Upgrade", 3500, 500, "avsarna0"],
+            "sod.visitable.marlettoTower": ["Upgrade", 1500, 500, "avsmarl"],
+            "sod.visitable.gardenOfRevelation": ["Upgrade", 1500, 1000, "avsgrdn0"],
+            "sod.visitable.libraryOfEnlightenment": [
+                "Upgrade",
+                10000,
+                1000,
+                { "m": { "": "avslibr0", "A": "avslibs0" } }
+            ],
+            "sod.visitable.schoolOfMagic": [
+                "Upgrade",
+                1000,
+                500,
+                { "m": { "": "avsschm0", "A": "avsschm1" } }
+            ],
+            "sod.visitable.starAxis": ["Upgrade", 1500, 1000, "avsaxis0"],
+            "sod.visitable.mercenaryCamp": ["Upgrade", 1500, 1000, "avsmerc0"],
+            "sod.visitable.university": ["Upgrade", 3000, 200, "avsuniv0"],
+            "sod.visitable.schoolOfWar": ["Upgrade", 1000, 500, "avswar20"],
+            "hota.visitable.colosseumOfMagi": ["Upgrade", 3500, 500, "avsmgarn"],
+            "hota.visitable.hermitHut": ["Upgrade", 2000, 800, "avshrmit"],
+
+            "sod.visitable.mysticalGarden": [
+                "ResourceGen",
+                500,
+                300,
+                { "m": { "": "avtmyst0", "A": "avtmystd" } }
+            ],
+            "sod.visitable.waterWheel": [
+                "ResourceGen",
+                1000,
+                300,
+                { "m": { "": "avmwwhl0", "S": "avmwwsn0" } }
+            ],
+            "sod.visitable.wagon": [
+                "ResourceGen",
+                500,
+                1500,
+                { "m": { "": "avtwagn0", "A": "hatel" } }
+            ],
+            "sod.visitable.windmill": [
+                "ResourceGen",
+                2500,
+                900,
+                { "m": { "": "avmwndd0", "A": "avmwmsn0" } }
+            ],
+            "hota.visitable.hotaStorage.wood": ["ResourceGen", 2500, 250, "avwrhswd"],
+            "hota.visitable.hotaStorage.mercury": ["ResourceGen", 2500, 250, "avwrhsmc"],
+            "hota.visitable.hotaStorage.ore": ["ResourceGen", 2500, 250, "avwrhsor"],
+            "hota.visitable.hotaStorage.sulfur": ["ResourceGen", 2500, 250, "avwrhssf"],
+            "hota.visitable.hotaStorage.crystal": ["ResourceGen", 2500, 250, "avwrhscr"],
+            "hota.visitable.hotaStorage.gem": ["ResourceGen", 2500, 250, "avwrhsgm"],
+            "hota.visitable.hotaStorage.gold": ["ResourceGen", 6000, 150, "avwrhsgl"],
+            "hota.visitable.derrick": ["ResourceGen", 750, 300, "avmoilpm"],
+            "hota.visitable.prospectorGen": ["ResourceGen", 500, 1000, "avtprosp"],
+            "sod.visitable.leanToWithResource": ["ResourceGen", 500, 1000, "avmlean0"],
+
+            "sod.visitable.learningStone": [
+                "Experience",
+                2500,
+                2000,
+                { "m": { "": "avsgzbo0", "S": "avsgzbs0" } }
+            ],
+            "hota.visitable.gazebo": ["Experience", 4000, 500, "avxgazeb"],
+            "sod.visitable.treeOfKnowledge": [
+                "Experience",
+                5000,
+                500,
+                { "m": { "": "avxtrek0", "S": "avxtrks0" } }
+            ],
+
+            "sod.visitable.altar": ["Support", 6000, 500, "avxaltar"],
+            "sod.visitable.blackMarket": ["Support", 8000, 200, "avxmktb0"],
+            "sod.visitable.faerieRing": ["Support", 100, 1000, "avsring0"],
+            "sod.visitable.fountainOfFortune": ["Support", 100, 1000, "avsfntn0"],
+            "sod.visitable.fountainOfYouth": [
+                "Support",
+                100,
+                500,
+                { "m": { "": "avxfyth0", "W": "watermag" } }
+            ],
+            "sod.visitable.hillFortWood": [
+                "Support",
+                6000,
+                500,
+                {
+                    "m": {
+                        "": "minifort",
+                        "DI": "miniftdr",
+                        "SA": "miniftsd",
+                        "SN": "miniftsn",
+                        "SW": "miniftsw",
+                        "RO": "miniftrg",
+                        "SUB": "miniftsb",
+                        "LA": "miniftlv",
+                        "HI": "minifthl",
+                        "WA": "miniftws"
+                    }
+                }
+            ],
+            "sod.visitable.idolOfFortune": [
+                "Support",
+                500,
+                1000,
+                { "m": { "": "avsidol0", "A": "avsidls0" } }
+            ],
+            "sod.visitable.magicSpring": ["Support", 500, 1000, "avxmags0"],
+            "sod.visitable.magicWell": [
+                "Support",
+                1000,
+                1000,
+                { "m": { "": "avxwelg0", "A": "avxwelr0", "B": "avxwlsn0" } }
+            ],
+            "sod.visitable.rallyFlag": ["Support", 100, 1000, "avxrlly0"],
+            "sod.visitable.stables": ["Support", 500, 400, "avxstbl0"],
+            "sod.visitable.tavern": [
+                "Support",
+                100,
+                200,
+                { "m": { "": "avxtvrn0", "S": "avxtvrs0", "W": "wt_tvrn01" } }
+            ],
+            "sod.visitable.temple": ["Support", 100, 1000, "avstmpl0"],
+            "sod.visitable.denOfThieves": [
+                "Support",
+                100,
+                1000,
+                { "m": { "": "avxdent", "A": "avxdend0", "S": "avxdens0" } }
+            ],
+            "sod.visitable.wateringHole": ["Support", 500, 100, "avxwtrh0"],
+            "sod.visitable.oasis": ["Support", 200, 500, "avxosis0"],
+            "sod.visitable.tradingPost": [
+                "Support",
+                5000,
+                500,
+                { "m": { "": "avxpost0", "A": "avxpstr0", "S": "avxpssn" } }
+            ],
+            "sod.visitable.freelancersGuild": ["Support", 2000, 300, "avxfgld"],
+            "sod.visitable.redwoodObservatory": [
+                "Support",
+                500,
+                2000,
+                { "m": { "": "avxredw", "A": "avxreds0", "B": "avwtobtw", "C": "avxpllr0" } }
+            ],
+            "sod.visitable.obelisk": [
+                "Support",
+                500,
+                1000,
+                {
+                    "m": {
+                        "": "avxoblb",
+                        "G": "avxoblg",
+                        "K": "avxoblk",
+                        "R": "avxoblr",
+                        "O": "avxoblo",
+                        "P": "avxoblp",
+                        "W": "avxoblw",
+                        "Y": "avxobly",
+                        "OR": "avxoblor",
+                        "T": "avxoblt"
+                    }
+                }
+            ],
+
+            "hota.visitable.alchemistLab": [
+                "Support",
+                10000,
+                500,
+                { "m": { "": "avxtrmtw", "S": "avxtrmts" } }
+            ],
+            "hota.visitable.trailblaizer": ["Support", 400, 200, "avstrblz"],
+            "hota.visitable.templeOfLoyalty": ["Support", 200, 100, "avstmplt"],
+            "hota.visitable.mineralSpring": ["Support", 1000, 400, "avxmspr0"],
+            "hota.visitable.wateringPlace": ["Support", 1000, 200, "avwtplce"],
+            "hota.visitable.junkman": ["Support", 500, 300, "avxjnkmn"],
+            "hota.visitable.townGate": ["Support", 10000, 400, "avxtwngt"],
+
+            "sod.visitable.refugeeCamp": ["ArmyAux", 6000, 500, "avgrefg0"],
+
+            "sod.visitable.swanPond": [
+                "",
+                0,
+                1000,
+                { "m": { "": "avsclvd0", "A": "avsclvg0", "B": "avsclvs0" } }
+            ],
+            "sod.visitable.corpse": [
+                "",
+                0,
+                1000,
+                { "m": { "": "avxskds0", "A": "avxskds1", "B": "avxskds2" } }
+            ],
+            "sod.visitable.hillFortStone": [
+                "",
+                0,
+                1000,
+                { "m": { "": "avxhild0", "A": "avxhilg0", "S": "avxhils0" } }
+            ],
+            "sod.visitable.pyramid": ["", 0, 1000, "avxprmd0"],
+            "sod.visitable.warriorsTomb": ["", 0, 1000, "avxtomb0"],
+            "sod.visitable.cartographer": [
+                "",
+                0,
+                1000,
+                { "m": { "": "avxmaps0", "U": "avxmapu0", "W": "avxmapw0" } }
+            ],
+            "sod.visitable.byou": ["", 0, 1000, "avsbuoy0"],
+            "sod.visitable.survivor": ["", 0, 1000, "avasurv0"],
+            "sod.visitable.mermaid": ["", 0, 1000, "avxmerm0"],
+            "sod.visitable.sanctuary": ["", 0, 1000, "avxsanc0"],
+            "sod.visitable.sirens": ["", 0, 1000, "avxsirn0"],
+            "hota.visitable.skeletonTransformer": ["", 0, 1000, "avxsktrs"],
+            "hota.visitable.waterObservatory": ["", 0, 1000, "avxwobs"],
+            "hota.visitable.altarOfMana": ["", 0, 1000, "avxmaltw"],
+            "hota.visitable.waterAcademy": ["", 0, 1000, "avswacad"],
+            "hota.visitable.diggableGrave": ["", 0, 1000, "avxgravw"],
+
+            "hota.visitable.ancientLamp": ["ArmyAux", 3000, 4000, "avtglam"],
+            "sod.resource.campfire": [
+                "Gold",
+                1000,
+                2000,
+                { "m": { "": "adcfra", "A": "avxcfsn0", "B": "avxcflv0", "C": "avxcfds0" } }
+            ],
+            "sod.resource.treasureChest": ["Experience", 1500, 4000, "avtchst0"],
+            "sod.resource.flotSam": ["Gold", 1000, 1000, "avaflot0"],
+            "sod.resource.jetSam": ["Gold", 1000, 1000, "avacratw"],
+            "sod.resource.seaChest": ["Experience", 2000, 1000, "avxccht0"],
+            "sod.resource.vialOfMana": ["", 1000, 1000, "avamnbtw"],
+            "sod.resource.barrelOnWater": ["Resource", 1000, 1000, "avabrrlw"],
+
+            "sod.visitable.coverOfDarkness": ["", 0, 1000, "avxcovr0"],
+            "sod.visitable.witchHut": ["", 0, 1000, { "m": { "": "avswtch0", "S": "avswtcs0" } }],
+            "sod.visitable.scholar": ["", 0, 1000, "avxschl0"],
+            "sod.visitable.questHut": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxseeb0",
+                        "A": "avxseer0",
+                        "B": "avxseey0",
+                        "C": "avxseec0",
+                        "D": "avxseee0",
+                        "W": "wt_seerh"
+                    }
+                }
+            ],
+            "sod.visitable.eyeOfMagi": ["", 0, 1000, "avxeyem0"],
+            "sod.visitable.hutOfMagi": ["", 0, 1000, "avxhutm0"],
+
+            "sod.visitable.shrine1": ["", 0, 1000, { "m": { "W": "avxl1sh0w", "": "avxl1sh0" } }],
+            "sod.visitable.shrine2": ["", 0, 1000, { "m": { "W": "avxl2sh0w", "": "avxl2sh0" } }],
+            "sod.visitable.shrine3": ["", 0, 1000, { "m": { "W": "avxl3sh0w", "": "avxl3sh0" } }],
+            "hota.visitable.shrine4": ["", 0, 1000, { "m": { "W": "avxl4sh0", "": "4lvlxshrn" } }],
+
+            "sod.visitable.undergroundEntrance": [
+                "",
+                0,
+                1000,
+                { "m": { "": "avtcave", "S": "avtcave2" } }
+            ],
+            "hota.visitable.undergroundExit": ["", 0, 1000, "haexit01"],
+
+            "sod.visitable.monolithEnter": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxmn1b0",
+                        "R": "avxmn1r0",
+                        "Y": "avxmn1y0",
+                        "I": "avxmn4i0",
+                        "T": "avxmn1t0",
+                        "V": "avxmn1v0",
+                        "G": "avxmn1g0",
+                        "W": "avxmn1w0",
+                        "I2": "avxmn5i0",
+                        "I3": "avxmn6i0",
+                        "I4": "avxmn7i0",
+                        "I5": "avxmn8i0"
+                    }
+                }
+            ],
+            "sod.visitable.monolithExit": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxmx1b0",
+                        "R": "avxmx1r0",
+                        "Y": "avxmx1y0",
+                        "O": "avxmn4o0",
+                        "T": "avxmx1t0",
+                        "V": "avxmx1v0",
+                        "G": "avxmx1g0",
+                        "W": "avxmx1w0",
+                        "O2": "avxmn5o0",
+                        "O3": "avxmn6o0",
+                        "O4": "avxmn7o0",
+                        "O5": "avxmn8o0"
+                    }
+                }
+            ],
+            "sod.visitable.monolithTwoSide": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxmn2g0",
+                        "O": "avxmn2o0",
+                        "P": "avxmn2p0",
+                        "B": "avxmn4b0",
+                        "PI": "avxmn2pink0",
+                        "T": "avxmn2t0",
+                        "Y": "avxmn2y0",
+                        "B2": "avxmn2b0",
+                        "BL": "avxmn2bl",
+                        "R": "avxmn2rd",
+                        "B5": "avxmn5b0",
+                        "B6": "avxmn6b0",
+                        "B7": "avxmn7b0",
+                        "B8": "avxmn8b0",
+                        "B9": "avxmn9b0",
+                        "B10": "avxmn10b",
+                        "B11": "avxmn11b",
+                        "B12": "avxmn12b",
+                        "B19": "avxmn19p",
+                        "B20": "avxmn20b"
+                    }
+                }
+            ],
+            "sod.visitable.monolithWater": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxmn9bw",
+                        "A": "avxptw_0",
+                        "B": "avxptw_1",
+                        "C": "avxptw_2",
+                        "D": "avxptw_3"
+                    }
+                }
+            ],
+
+            "sod.visitable.borderGate": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxbgt00",
+                        "A": "avxbgt10",
+                        "B": "avxbgt20",
+                        "C": "avxbgt30",
+                        "D": "avxbgt40",
+                        "E": "avxbgt50",
+                        "F": "avxbgt60",
+                        "G": "avxbgt70",
+                        "W": "avxwgtwh",
+                        "WA": "avxwgtbk",
+                        "WB": "avxwgtbl",
+                        "WC": "avxwgtbr",
+                        "WD": "avxwgtgr",
+                        "WE": "avxwgtlb",
+                        "WF": "avxwgtqu",
+                        "WG": "avxwgtrd",
+                        "WH": "avxwgtvl"
+                    }
+                }
+            ],
+            "sod.visitable.borderGuard": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxbor00",
+                        "A": "avxbor10",
+                        "B": "avxbor20",
+                        "C": "avxbor30",
+                        "D": "avxbor40",
+                        "E": "avxbor50",
+                        "F": "avxbor60",
+                        "G": "avxbor70",
+                        "W": "avxwbor0",
+                        "WA": "avxwbor1",
+                        "WB": "avxwbor2",
+                        "WC": "avxwbor3",
+                        "WD": "avxwbor4",
+                        "WE": "avxwbor5",
+                        "WF": "avxwbor6",
+                        "WG": "avxwbor7"
+                    }
+                }
+            ],
+            "sod.visitable.questGuard": ["", 0, 1000, { "m": { "": "avxbor80", "W": "avxwbor8" } }],
+            "hota.visitable.questGateHor": ["", 0, 1000, "avxqgt"],
+            "hota.visitable.questGateVert": ["", 0, 1000, "avxqgtv"],
+            "sod.visitable.keyTent": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxkey00",
+                        "A": "avxkey10",
+                        "B": "avxkey20",
+                        "C": "avxkey30",
+                        "D": "avxkey40",
+                        "E": "avxkey50",
+                        "F": "avxkey60",
+                        "G": "avxkey70"
+                    }
+                }
+            ],
+            "sod.visitable.whirlpool": ["", 0, 1000, "avxwhrl0"],
+            "sod.visitable.boat": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxboat0",
+                        "A": "avxboat1",
+                        "B": "avxboat2",
+                        "C": "avxboat4",
+                        "D": "avxboat5",
+                        "E": "avxboat6"
+                    }
+                }
+            ],
+
+            "sod.visitable.shipyard": ["", 0, 1000, "avxshyd0"],
+            "sod.visitable.lighthouse": ["", 0, 1000, "avxlths0"],
+            "sod.visitable.sign": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avxsndg0",
+                        "SD": "avxsnds0",
+                        "LV": "avxsnlv0",
+                        "SN": "avxsnsn0",
+                        "SW": "avxsnsw0",
+                        "WA": "avxsnwst",
+                        "HI": "avxsnhl",
+                        "WT": "avxbttl0",
+                        "YK": "avlyuc30"
+                    }
+                }
+            ],
+
+            "sod.visitable.garisonVert": [
+                "",
+                0,
+                1000,
+                { "m": { "": "avcvgr", "WT": "avcvgrw", "WOOD": "avgtzab3", "WOODS": "avgtzab4" } }
+            ],
+            "sod.visitable.garisonHor": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "avcgar10",
+                        "WT": "avcgarw1",
+                        "E": "avcgare",
+                        "WOOD": "avgtzab1",
+                        "WOODS": "avgtzab2"
+                    }
+                }
+            ],
+            "sod.visitable.garisonVertMagic": ["", 0, 1000, { "m": { "": "avcvgarm" } }],
+            "sod.visitable.garisonHorMagic": ["", 0, 1000, { "m": { "": "avcgar20" } }],
+
+            "sod.visitable.abandonedMine": [
+                "",
+                0,
+                1000,
+                {
+                    "m": {
+                        "": "mntswpab",
+                        "A": "avxamsw",
+                        "B": "avxamds",
+                        "C": "avxamgr",
+                        "D": "avxamlv",
+                        "E": "avxamro",
+                        "F": "avxamsn",
+                        "G": "avxamsu",
+                        "H": "avxabnd0",
+                        "I": "avmabmg",
+                        "J": "avxamdn",
+                        "K": "avxamh1",
+                        "L": "avxamwl"
+                    }
+                }
+            ]
+        }
+    },
+
+    {
+        "scope": "mapVisitables",
+        "compactCols": ["visitKind"],
+
+        "records": {
+            "sod.resource.campfire": ["Pick"],
+            "sod.resource.treasureChest": ["Pick"],
+            "sod.resource.flotSam": ["Pick"],
+            "sod.resource.jetSam": ["Pick"],
+            "sod.resource.seaChest": ["Pick"],
+            "sod.resource.vialOfMana": ["Pick"],
+            "sod.resource.barrelOnWater": ["Pick"],
+            "hota.visitable.ancientLamp": ["Pick"]
+        }
+    },
+
+    {
+        "scope": "mapVisitables",
+        "compactCols": ["minZone", "maxZone"],
+
+        "records": {
+            "sod.visitable.altar": [1, 1],
+            "sod.visitable.hillFortWood": [1, -1],
+            "sod.visitable.magicSpring": [1, 1],
+            "sod.visitable.magicWell": [1, 1],
+            "sod.visitable.stables": [1, 1],
+            "sod.visitable.tradingPost": [1, 1],
+            "sod.visitable.obelisk": [1, 1],
+
+            "hota.visitable.alchemistLab": [1, -1],
+            "hota.visitable.wateringPlace": [1, 1],
+            "hota.visitable.junkman": [1, 1]
+        }
+    }
+]

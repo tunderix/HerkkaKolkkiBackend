@@ -1,0 +1,1431 @@
+{
+    "format": "HOTA3",
+    "seed": 0,
+    "name": "JC",
+    "descr": "Jebus Cross Balanced",
+    "tileMap": { "depth": 1, "height": 144, "width": 144 },
+    "template": {
+        "zones": {
+            "Common": {
+                "centerDispersion": { "x": 5, "y": 5 },
+                "relativeSizeAvg": 100,
+                "relativeSizeDispersion": 1,
+                "segmentAreaSize": 250,
+                "towns": {
+                    "main": {
+                        "town": {
+                            "isMain": true,
+                            "hasFort": true,
+                            "hasCustomBuildings": true,
+                            "buildings": ["townHall1", "fort1", "tavern", "t1", "t2"],
+                            "garisonRmg": [{ "levels": [10], "value": 1000 }]
+                        },
+                        "playerControlled": true,
+                        "useZoneFaction": true
+                    },
+                    "town1": {
+                        "town": {
+                            "hasCustomBuildings": true,
+                            "buildings": ["townHall1", "tavern", "t1", "t2"],
+                            "garisonRmg": [
+                                { "levels": [10], "value": 2000 },
+                                { "levels": [20], "value": 1000 },
+                                { "levels": [30], "value": 1000 }
+                            ]
+                        }
+                    },
+                    "town2": {
+                        "town": {
+                            "hasCustomBuildings": true,
+                            "buildings": ["townHall1", "tavern", "t1", "t2"],
+                            "garisonRmg": [
+                                { "levels": [10], "value": 2000 },
+                                { "levels": [20], "value": 1000 },
+                                { "levels": [30], "value": 1000 }
+                            ]
+                        }
+                    }
+                },
+
+                "scoreTargets": {
+                    "010_ControlScrolls": {
+                        "isEnabled": true,
+                        "placementOrder": -1,
+                        "preferredHeats": [9],
+                        "generatorsExclude": ["shrines", "pandoras"],
+                        "objectIdInclude": [
+                            "sod.spell.fly",
+                            "sod.spell.dimensionDoor",
+                            "sod.spell.townPortal"
+                        ],
+                        "score": {
+                            "Control": { "target": 82000, "maxSingle": 30000 }
+                        }
+                    },
+
+                    "110_Utopia": {
+                        "isEnabled": true,
+                        "preferredHeats": [7],
+                        "generatorsInclude": ["banks"],
+                        "score": {
+                            "ArtStat": {
+                                "target": 40000,
+                                "maxSingle": 15000,
+                                "minSingle": 4000,
+                                "maxRemain": 40000
+                            },
+                            "ArtSupport": {
+                                "target": 25000,
+                                "maxSingle": 10000,
+                                "minSingle": 4000,
+                                "maxRemain": 25000
+                            },
+                            "Gold": {
+                                "target": 30000,
+                                "maxSingle": 30000,
+                                "minSingle": 30000,
+                                "maxRemain": 0
+                            }
+                        }
+                    },
+                    "120_HighArmy": {
+                        "isEnabled": true,
+                        "preferredHeats": [3, 4],
+                        "openPandoras": true,
+                        "score": {
+                            "Army": {
+                                "target": 25000,
+                                "maxSingle": 20000,
+                                "minSingle": 10000,
+                                "maxRemain": 15000
+                            },
+                            "ArmyDwelling": {
+                                "target": 20000,
+                                "maxSingle": 20000,
+                                "minSingle": 6660,
+                                "maxRemain": 10
+                            },
+                            "ArmyAux": {
+                                "target": 25000,
+                                "maxSingle": 15000,
+                                "minSingle": 10000,
+                                "maxRemain": 15000
+                            }
+                        }
+                    },
+                    "130_MidArmy": {
+                        "isEnabled": true,
+                        "preferredHeats": [0],
+                        "openPandoras": true,
+                        "score": {
+                            "Army": {
+                                "target": 30000,
+                                "maxSingle": 12000,
+                                "maxRemain": 5000,
+                                "consumeRemain": true
+                            },
+                            "ArmyDwelling": {
+                                "target": 10000,
+                                "maxSingle": 9000,
+                                "maxRemain": 5000,
+                                "minSingle": 4000
+                            },
+                            "ArmyAux": {
+                                "target": 15000,
+                                "maxSingle": 9000,
+                                "maxRemain": 5000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "140_LowArmy": {
+                        "isEnabled": true,
+                        "preferredHeats": [5, 6, 7],
+                        "useGuards": true,
+                        "score": {
+                            "ArmyDwelling": {
+                                "target": 20000,
+                                "maxSingle": 3900,
+                                "maxRemain": 2500,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+
+                    "310_HighSupportVisitables": {
+                        "isEnabled": true,
+                        "preferredHeats": [1],
+                        "score": {
+                            "Support": {
+                                "target": 15000,
+                                "minSingle": 5000,
+                                "maxRemain": 8000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "320_HighArtsAndBanks": {
+                        "isEnabled": true,
+                        "preferredHeats": [5, 6, 7],
+                        "score": {
+                            "Resource": {
+                                "target": 60000,
+                                "maxSingle": 50000,
+                                "minSingle": 8000,
+                                "maxRemain": 50000,
+                                "consumeRemain": true
+                            },
+                            "Gold": {
+                                "target": 30000,
+                                "maxSingle": 15000,
+                                "minSingle": 3000,
+                                "maxRemain": 5000
+                            },
+
+                            "ArtStat": {
+                                "target": 1,
+                                "maxSingle": 15000,
+                                "minSingle": 4000,
+                                "maxRemain": 7000
+                            },
+                            "ArtSupport": {
+                                "target": 1,
+                                "maxSingle": 10000,
+                                "minSingle": 4000,
+                                "maxRemain": 7000
+                            }
+                        }
+                    },
+
+                    "410_HighOffensiveSpells": {
+                        "isEnabled": true,
+                        "preferredHeats": [8, 9],
+                        "generatorsExclude": ["shrines", "pandoras"],
+                        "objectIdInclude": [
+                            "sod.spell.earthElemental",
+                            "sod.spell.airElemental",
+                            "sod.spell.armageddon",
+                            "sod.spell.implosion"
+                        ],
+                        "score": {
+                            "SpellOffensive": { "target": 32000, "minSingle": -1, "maxRemain": 0 }
+                        }
+                    },
+                    "420_HighCommonSpells": {
+                        "isEnabled": true,
+                        "preferredHeats": [8, 9],
+                        "generatorsExclude": ["shrines", "pandoras"],
+                        "objectIdInclude": [
+                            "sod.spell.berserk",
+                            "sod.spell.resurrection",
+                            "sod.spell.animateDead",
+                            "sod.spell.antiMagic"
+                        ],
+                        "score": {
+                            "SpellCommon": {
+                                "target": 25000,
+                                "minSingle": -1,
+                                "maxRemain": 12000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "430_MidOffensiveSpells": {
+                        "isEnabled": true,
+                        "preferredHeats": [6, 7, 8],
+                        "generatorsExclude": ["shrines", "pandoras"],
+                        "objectIdInclude": [
+                            "sod.spell.waterElemental",
+                            "sod.spell.chainLightning",
+                            "sod.spell.meteorShower",
+                            "sod.spell.fireElemental"
+                        ],
+                        "score": {
+                            "SpellOffensive": {
+                                "target": 22000,
+                                "minSingle": -1,
+                                "maxRemain": 10000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "440_MidCommonSpells": {
+                        "isEnabled": true,
+                        "preferredHeats": [6, 7, 8],
+                        "generatorsExclude": ["shrines", "pandoras"],
+                        "objectIdInclude": [
+                            "sod.spell.frenzy",
+                            "sod.spell.counterstrike",
+                            "sod.spell.fireShield",
+                            "sod.spell.sacrifice",
+                            "sod.spell.forceField",
+                            "sod.spell.fireWall",
+                            "sod.spell.earthquake",
+                            "sod.spell.teleport",
+                            "sod.spell.clone",
+                            "sod.spell.blind",
+                            "sod.spell.hypnotize",
+                            "sod.spell.forgetfulness"
+                        ],
+                        "score": {
+                            "SpellCommon": {
+                                "target": 20000,
+                                "minSingle": -1,
+                                "maxRemain": 10000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "450_LowOffensiveSpells": {
+                        "isEnabled": true,
+                        "preferredHeats": [2, 3, 4, 5],
+                        "generatorsExclude": ["shrines", "pandoras"],
+                        "objectIdInclude": [
+                            "sod.spell.iceBolt",
+                            "sod.spell.lightningBolt",
+                            "sod.spell.frostRing",
+                            "sod.spell.fireball",
+                            "sod.spell.inferno",
+                            "sod.spell.deathRipple",
+                            "sod.spell.destroyUndead"
+                        ],
+                        "score": {
+                            "SpellOffensive": {
+                                "target": 20000,
+                                "minSingle": -1,
+                                "maxRemain": 5000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+
+                    "510_XpPandoras": {
+                        "isEnabled": true,
+                        "preferredHeats": [4, 5, 6, 7],
+                        "generatorsInclude": ["pandoras"],
+                        "score": {
+                            "Experience": {
+                                "target": 40000,
+                                "maxSingle": 12000,
+                                "minSingle": 3000,
+                                "maxRemain": 5000
+                            }
+                        }
+                    },
+                    "520_PermanentXp": {
+                        "isEnabled": true,
+                        "guardThreshold": 6000,
+                        "preferredHeats": [1, 2, 3, 4, 5],
+                        "generatorsInclude": ["visitables"],
+                        "score": {
+                            "Experience": { "target": 20000, "minSingle": 2000, "maxRemain": 4000 }
+                        }
+                    },
+                    "530_GuardedTreasureChests": {
+                        "isEnabled": true,
+                        "preferredHeats": [0, 1, 2],
+                        "guardThreshold": 10,
+                        "guardMinToGroup": 10,
+                        "score": {
+                            "Experience": {
+                                "target": 20000,
+                                "maxSingle": 2000,
+                                "maxRemain": 4000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+
+                    "610_Mid": {
+                        "isEnabled": true,
+                        "preferredHeats": [3, 4, 5, 6, 7, 8, 9],
+                        "generatorsExclude": ["resources"],
+                        "score": {
+                            "ArtStat": {
+                                "target": 25000,
+                                "maxSingle": 7000,
+                                "minSingle": 2500,
+                                "maxRemain": 4000
+                            },
+                            "ArtSupport": {
+                                "target": 15000,
+                                "maxSingle": 7000,
+                                "minSingle": 2500,
+                                "maxRemain": 4000
+                            },
+                            "Gold": {
+                                "target": 30000,
+                                "maxSingle": 15000,
+                                "minSingle": 5001,
+                                "maxRemain": 10000
+                            },
+                            "Resource": {
+                                "target": 40000,
+                                "maxSingle": 15000,
+                                "minSingle": 2500,
+                                "maxRemain": 10000
+                            },
+                            "Support": {
+                                "target": 5000,
+                                "maxSingle": 4900,
+                                "minSingle": 1001,
+                                "maxRemain": 2100,
+                                "consumeRemain": true
+                            },
+                            "Upgrade": {
+                                "target": 10000,
+                                "maxSingle": 9000,
+                                "minSingle": 2000,
+                                "maxRemain": 4000
+                            }
+                        }
+                    },
+                    "620_GuardedResources": {
+                        "isEnabled": true,
+                        "guardThreshold": 10,
+                        "guardMinToGroup": 10,
+                        "preferredHeats": [2, 3, 4],
+                        "generatorsInclude": ["resources"],
+                        "score": {
+                            "Resource": { "target": 20000, "maxSingle": 3000, "maxRemain": 6000 }
+                        }
+                    },
+                    "630_LowUnguarded": {
+                        "isEnabled": true,
+                        "guardThreshold": 100000,
+                        "preferredHeats": [2, 3, 4, 5, 6, 7],
+                        "generatorsExclude": ["resources", "shrines"],
+                        "objectIdExclude": [
+                            "sod.visitable.redwoodObservatory",
+                            "sod.visitable.magicWell"
+                        ],
+                        "score": {
+                            "ArtStat": {
+                                "target": 6000,
+                                "maxSingle": 2400,
+                                "maxRemain": 4000,
+                                "consumeRemain": true
+                            },
+                            "ArtSupport": {
+                                "target": 4000,
+                                "maxSingle": 2400,
+                                "maxRemain": 4000,
+                                "consumeRemain": true
+                            },
+                            "Gold": { "target": 30000, "maxSingle": 5000, "maxRemain": 2000 },
+                            "Upgrade": {
+                                "target": 10000,
+                                "maxSingle": 3000,
+                                "maxRemain": 5000,
+                                "consumeRemain": true
+                            },
+                            "ResourceGen": {
+                                "target": 50000,
+                                "maxRemain": 5000,
+                                "consumeRemain": true
+                            },
+                            "Support": {
+                                "target": 2000,
+                                "maxSingle": 1000,
+                                "maxRemain": 2000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "810_SegmentScatter": {
+                        "isEnabled": true,
+                        "objectType": "SegmentScatter",
+                        "placementOrder": 100,
+                        "generatorsExclude": ["banks", "shrines"],
+                        "objectIdInclude": [
+                            "sod.spell.slow",
+                            "sod.spell.haste",
+                            "sod.spell.viewEarth",
+                            "sod.spell.viewAir",
+                            "sod.spell.visions",
+                            "sod.spell.dispel",
+                            "sod.spell.cure",
+                            "sod.spell.shield",
+                            "sod.spell.airShield",
+                            "sod.spell.protectFromAir",
+                            "sod.spell.protectFromFire",
+                            "sod.spell.protectFromWater",
+                            "sod.spell.protectFromEarth",
+                            "sod.spell.bless",
+                            "sod.spell.curse",
+                            "sod.spell.bloodLust",
+                            "sod.spell.stoneSkin"
+                        ],
+                        "score": {
+                            "Gold": {
+                                "target": 30000,
+                                "maxSingle": 2000,
+                                "maxRemain": 3000,
+                                "consumeRemain": true
+                            },
+                            "Resource": {
+                                "target": 60000,
+                                "maxSingle": 2500,
+                                "maxRemain": 3000,
+                                "consumeRemain": true
+                            },
+
+                            "SpellCommon": {
+                                "target": 15000,
+                                "minSingle": -1,
+                                "maxRemain": 2000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "910_RoadScatter": {
+                        "objectType": "RoadScatter",
+                        "isEnabled": true,
+                        "placementOrder": 100,
+
+                        "generatorsExclude": ["banks"],
+                        "score": {
+                            "Resource": {
+                                "target": 40000,
+                                "maxSingle": 2500,
+                                "maxRemain": 3000,
+                                "consumeRemain": true
+                            },
+                            "Gold": {
+                                "target": 40000,
+                                "maxSingle": 2500,
+                                "maxRemain": 3000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "920_RoadMid1": {
+                        "objectType": "TownMid1",
+                        "guardThreshold": 100000,
+                        "placementOrder": -1,
+                        "isEnabled": true,
+                        "generatorsInclude": ["visitables"],
+                        "objectIdInclude": ["sod.visitable.redwoodObservatory"],
+                        "score": {
+                            "Support": { "target": 500 }
+                        }
+                    },
+                    "930_RoadMid2": {
+                        "objectType": "TownMid2",
+                        "guardThreshold": 100000,
+                        "placementOrder": -1,
+                        "isEnabled": true,
+                        "generatorsInclude": ["visitables"],
+                        "objectIdInclude": ["sod.visitable.redwoodObservatory"],
+                        "score": {
+                            "Support": { "target": 500 }
+                        }
+                    },
+                    "940_ExitMid1": {
+                        "objectType": "ExitMid1",
+                        "guardThreshold": 100000,
+                        "placementOrder": -1,
+                        "isEnabled": true,
+                        "generatorsInclude": ["visitables"],
+                        "objectIdInclude": ["sod.visitable.magicWell"],
+                        "score": {
+                            "Support": { "target": 1000 }
+                        }
+                    }
+                },
+                "guardThreshold": 4000,
+                "guardMinToGroup": 0,
+                "guardGroupLimit": 14000,
+
+                "generators": {
+                    "banks": {
+                        "isEnabled": true,
+                        "maxUniqueFactions": 3
+                    },
+                    "artifacts": {
+                        "isEnabled": true,
+                        "records": {
+                            "treasure": {
+                                "frequency": 100,
+                                "pool": { "classes": ["treasure"] },
+                                "filter": { "classes": ["treasure"], "notTags": ["stats"] }
+                            },
+                            "minor": {
+                                "frequency": 300,
+                                "pool": { "classes": ["minor"] },
+                                "filter": { "classes": ["minor"], "notTags": ["stats"] }
+                            },
+                            "major": {
+                                "frequency": 500,
+                                "pool": { "classes": ["major"] },
+                                "filter": { "classes": ["major"], "notTags": ["stats"] }
+                            },
+                            "relic": {
+                                "frequency": 1000,
+                                "pool": { "classes": ["relic"] },
+                                "filter": { "classes": ["relic"], "notTags": ["stats", "control"] }
+                            },
+                            "treasureStat": {
+                                "frequency": 100,
+                                "pool": { "classes": ["treasure"] },
+                                "filter": { "classes": ["treasure"], "tags": ["stats"] }
+                            },
+                            "minorStat": {
+                                "frequency": 300,
+                                "pool": { "classes": ["minor"] },
+                                "filter": { "classes": ["minor"], "tags": ["stats"] }
+                            },
+                            "majorStat": {
+                                "frequency": 500,
+                                "pool": { "classes": ["major"] },
+                                "filter": { "classes": ["major"], "tags": ["stats"] }
+                            },
+                            "relicStat": {
+                                "frequency": 1000,
+                                "pool": { "classes": ["relic"] },
+                                "filter": {
+                                    "classes": ["relic"],
+                                    "tags": ["stats"],
+                                    "notTags": ["control"]
+                                }
+                            },
+                            "control": {
+                                "frequency": 4000,
+                                "pool": { "classes": ["relic"] },
+                                "filter": { "classes": ["relic"], "tags": ["control"] }
+                            }
+                        }
+                    },
+                    "resources": {
+                        "isEnabled": true,
+                        "records": {
+                            "gold": {
+                                "amounts": [500, 600, 700, 800, 900, 1000],
+                                "guard": 1500,
+                                "resource": "gold",
+                                "frequency": 8000
+                            },
+                            "wood": {
+                                "amounts": [5, 6, 7, 8, 9, 10],
+                                "guard": 1500,
+                                "resource": "wood",
+                                "frequency": 5000
+                            },
+                            "ore": {
+                                "amounts": [5, 6, 7, 8, 9, 10],
+                                "guard": 1500,
+                                "resource": "ore",
+                                "frequency": 5000
+                            },
+                            "mercury": {
+                                "amounts": [3, 4, 5, 6],
+                                "guard": 2000,
+                                "resource": "mercury",
+                                "frequency": 3000
+                            },
+                            "sulfur": {
+                                "amounts": [3, 4, 5, 6],
+                                "guard": 2000,
+                                "resource": "sulfur",
+                                "frequency": 3000
+                            },
+                            "crystal": {
+                                "amounts": [3, 4, 5, 6],
+                                "guard": 2000,
+                                "resource": "crystal",
+                                "frequency": 3000
+                            },
+                            "gems": {
+                                "amounts": [3, 4, 5, 6],
+                                "guard": 2000,
+                                "resource": "gems",
+                                "frequency": 3000
+                            }
+                        }
+                    },
+                    "pandoras": {
+                        "isEnabled": true,
+                        "records": {
+                            "gold5K": { "frequency": 1, "reward": { "resources": "5000" } },
+                            "gold7K": { "frequency": 2, "reward": { "resources": "7500" } },
+                            "gold10K": { "frequency": 5, "reward": { "resources": "10000" } },
+                            "gold12K": { "frequency": 10, "reward": { "resources": "12500" } },
+                            "gold15K": { "frequency": 30, "reward": { "resources": "15000" } },
+                            "gold20K": { "frequency": 40, "reward": { "resources": "20000" } },
+                            "gold25K": { "frequency": 50, "reward": { "resources": "25000" } },
+
+                            "xp4K": { "frequency": 100, "reward": { "exp": 4000 } },
+                            "xp6K": { "frequency": 200, "reward": { "exp": 6000 } },
+                            "xp8K": { "frequency": 500, "reward": { "exp": 8000 } },
+                            "xp10K": { "frequency": 500, "reward": { "exp": 10000 } },
+                            "xp12K": { "frequency": 600, "reward": { "exp": 12000 } },
+                            "xp16K": { "frequency": 600, "reward": { "exp": 16000 } },
+                            "xp20K": { "frequency": 800, "reward": { "exp": 20000 } },
+
+                            "sp1": {
+                                "frequency": 20,
+                                "guard": 10000,
+                                "reward": { "spells": { "levels": [1] } }
+                            },
+                            "sp2": {
+                                "frequency": 100,
+                                "guard": 15000,
+                                "reward": { "spells": { "levels": [2] } }
+                            },
+                            "sp3": {
+                                "frequency": 300,
+                                "guard": 20000,
+                                "reward": { "spells": { "levels": [3] } }
+                            },
+                            "sp4": {
+                                "frequency": 300,
+                                "guard": 30000,
+                                "reward": { "spells": { "levels": [4], "notTags": ["control"] } }
+                            },
+                            "sp5": {
+                                "frequency": 300,
+                                "guard": 40000,
+                                "reward": { "spells": { "levels": [5], "notTags": ["control"] } }
+                            },
+                            "spControl": {
+                                "frequency": 0,
+                                "guard": 50000,
+                                "reward": { "spells": { "tags": ["control"] } }
+                            },
+                            "spAir": {
+                                "frequency": 300,
+                                "guard": 30000,
+                                "reward": {
+                                    "spells": { "schools": ["air"], "notTags": ["control"] }
+                                }
+                            },
+                            "spEarth": {
+                                "frequency": 300,
+                                "guard": 30000,
+                                "reward": {
+                                    "spells": { "schools": ["earth"], "notTags": ["control"] }
+                                }
+                            },
+                            "spFire": {
+                                "frequency": 300,
+                                "guard": 25000,
+                                "reward": {
+                                    "spells": { "schools": ["fire"], "notTags": ["control"] }
+                                }
+                            },
+                            "spWater": {
+                                "frequency": 300,
+                                "guard": 20000,
+                                "reward": {
+                                    "spells": { "schools": ["water"], "notTags": ["control"] }
+                                }
+                            },
+                            "spAll": {
+                                "frequency": 0,
+                                "guard": 70000,
+                                "reward": { "spells": { "all": true } }
+                            },
+
+                            "T1": {
+                                "frequency": 100,
+                                "guard": 10000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [10, 11, 12], "value": 5000 }]
+                                }
+                            },
+                            "T2A": {
+                                "frequency": 200,
+                                "guard": 10000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [20, 21, 22], "value": 5000 }]
+                                }
+                            },
+                            "T2B": {
+                                "frequency": 500,
+                                "guard": 15000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [20, 21, 22], "value": 7500 }]
+                                }
+                            },
+                            "T3A": {
+                                "frequency": 1000,
+                                "guard": 15000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [30, 31, 32], "value": 7500 }]
+                                }
+                            },
+                            "T3B": {
+                                "frequency": 1000,
+                                "guard": 20000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [30, 31, 32], "value": 10000 }]
+                                }
+                            },
+                            "T4A": {
+                                "frequency": 1000,
+                                "guard": 20000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [40, 41, 42], "value": 10000 }]
+                                }
+                            },
+                            "T4B": {
+                                "frequency": 1000,
+                                "guard": 25000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [40, 41, 42], "value": 12500 }]
+                                }
+                            },
+                            "T5A": {
+                                "frequency": 1000,
+                                "guard": 25000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [50, 51, 52], "value": 12500 }]
+                                }
+                            },
+                            "T5B": {
+                                "frequency": 1000,
+                                "guard": 30000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [50, 51, 52], "value": 15000 }]
+                                }
+                            },
+                            "T6A": {
+                                "frequency": 2000,
+                                "guard": 40000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [60, 61], "value": 20000 }]
+                                }
+                            },
+                            "T6B": {
+                                "frequency": 2000,
+                                "guard": 50000,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [60, 61], "value": 25000 }]
+                                }
+                            },
+                            "T7A": {
+                                "frequency": 2000,
+                                "guard": -1,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [70, 71], "value": 26000 }]
+                                }
+                            },
+                            "T7B": {
+                                "frequency": 2000,
+                                "guard": -1,
+                                "reward": {
+                                    "randomUnits": [{ "levels": [70, 71], "value": 40000 }]
+                                }
+                            },
+                            "T8": {
+                                "frequency": 2000,
+                                "guard": -1,
+                                "reward": { "randomUnits": [{ "levels": [80], "value": 200000 }] }
+                            }
+                        }
+                    },
+                    "shrines": {
+                        "isEnabled": true,
+                        "records": {
+                            "lvl1": {
+                                "frequency": 300,
+                                "visualLevel": 1,
+                                "filter": { "levels": [1], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl2": {
+                                "frequency": 200,
+                                "visualLevel": 2,
+                                "filter": { "levels": [2], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl3": {
+                                "frequency": 200,
+                                "visualLevel": 3,
+                                "filter": { "levels": [3], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl4": {
+                                "frequency": 150,
+                                "visualLevel": 4,
+                                "filter": { "levels": [4], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl5": {
+                                "frequency": 100,
+                                "visualLevel": 4,
+                                "filter": { "levels": [5], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl1off": {
+                                "frequency": 50,
+                                "visualLevel": 1,
+                                "filter": {
+                                    "levels": [1],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl2off": {
+                                "frequency": 100,
+                                "visualLevel": 2,
+                                "filter": {
+                                    "levels": [2],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl3off": {
+                                "frequency": 200,
+                                "visualLevel": 3,
+                                "filter": {
+                                    "levels": [3],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl4off": {
+                                "frequency": 100,
+                                "visualLevel": 4,
+                                "filter": {
+                                    "levels": [4],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl5off": {
+                                "frequency": 100,
+                                "visualLevel": 4,
+                                "filter": {
+                                    "levels": [5],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "control": {
+                                "frequency": 0,
+                                "visualLevel": 4,
+                                "filter": { "tags": ["control"] }
+                            }
+                        }
+                    },
+                    "scrolls": {
+                        "isEnabled": true,
+                        "records": {
+                            "lvl1": {
+                                "frequency": 500,
+                                "filter": { "levels": [1], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl2": {
+                                "frequency": 200,
+                                "filter": { "levels": [2], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl3": {
+                                "frequency": 50,
+                                "filter": { "levels": [3], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl4": {
+                                "frequency": 500,
+                                "filter": { "levels": [4], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl5": {
+                                "frequency": 500,
+                                "filter": { "levels": [5], "notTags": ["offensive", "control"] }
+                            },
+                            "lvl1off": {
+                                "frequency": 100,
+                                "filter": {
+                                    "levels": [1],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl2off": {
+                                "frequency": 200,
+                                "filter": {
+                                    "levels": [2],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl3off": {
+                                "frequency": 600,
+                                "filter": {
+                                    "levels": [3],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl4off": {
+                                "frequency": 500,
+                                "filter": {
+                                    "levels": [4],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "lvl5off": {
+                                "frequency": 500,
+                                "filter": {
+                                    "levels": [5],
+                                    "notTags": ["control"],
+                                    "tags": ["offensive"]
+                                }
+                            },
+                            "control": { "frequency": 10000, "filter": { "tags": ["control"] } }
+                        }
+                    },
+                    "dwellings": {
+                        "isEnabled": true,
+                        "records": {
+                            "T1": { "frequency": 500, "level": 10, "value": 2500, "guard": 2000 },
+                            "T2": { "frequency": 400, "level": 20, "value": 3000, "guard": 2000 },
+                            "T3": { "frequency": 400, "level": 30, "value": 3500, "guard": 3000 },
+                            "T4": { "frequency": 400, "level": 40, "value": 4000, "guard": 4000 },
+                            "T5": { "frequency": 400, "level": 50, "value": 5000, "guard": 5000 },
+                            "T6": { "frequency": 400, "level": 60, "value": 6000, "guard": 8000 },
+                            "T7": {
+                                "frequency": 400,
+                                "level": 70,
+                                "value": 10000,
+                                "guard": 12000,
+                                "factionValues": {
+                                    "sod.faction.castle": 20000,
+                                    "sod.faction.necropolis": 6666,
+                                    "sod.faction.fortress": 6666
+                                }
+                            },
+                            "T8": { "frequency": 200, "level": 80, "value": -1, "guard": 20000 },
+                            "warMachine": {
+                                "frequency": 100,
+                                "level": 90,
+                                "value": 3000,
+                                "guard": 4000
+                            }
+                        }
+                    },
+                    "visitables": {
+                        "isEnabled": true,
+                        "records": {
+                            "refugeeCamp": { "id": "sod.visitable.refugeeCamp", "guard": 5000 }
+                        }
+                    },
+                    "mines": {
+                        "isEnabled": true,
+                        "records": {
+                            "gold": {
+                                "value": 3000,
+                                "guard": 6000,
+                                "minZone": 3,
+                                "maxZone": 4,
+                                "resourceId": "gold",
+                                "frequency": 2500
+                            },
+                            "wood": {
+                                "value": 2000,
+                                "guard": 1000,
+                                "minZone": 2,
+                                "maxZone": 3,
+                                "resourceId": "wood",
+                                "frequency": 2000
+                            },
+                            "ore": {
+                                "value": 2000,
+                                "guard": 1000,
+                                "minZone": 2,
+                                "maxZone": 3,
+                                "resourceId": "ore",
+                                "frequency": 2000
+                            },
+                            "mercury": {
+                                "value": 2000,
+                                "guard": 3000,
+                                "minZone": 1,
+                                "maxZone": 2,
+                                "resourceId": "mercury",
+                                "frequency": 1200
+                            },
+                            "sulfur": {
+                                "value": 2000,
+                                "guard": 3000,
+                                "minZone": 1,
+                                "maxZone": 2,
+                                "resourceId": "sulfur",
+                                "frequency": 1200
+                            },
+                            "crystal": {
+                                "value": 2000,
+                                "guard": 3000,
+                                "minZone": 1,
+                                "maxZone": 2,
+                                "resourceId": "crystal",
+                                "frequency": 1200
+                            },
+                            "gems": {
+                                "value": 2000,
+                                "guard": 3000,
+                                "minZone": 1,
+                                "maxZone": 2,
+                                "resourceId": "gems",
+                                "frequency": 1200
+                            }
+                        }
+                    },
+                    "skillHuts": {
+                        "isEnabled": true,
+                        "frequency": 50,
+                        "guard": 3000
+                    }
+                }
+            },
+            "Treasure": {
+                "base": "Common",
+                "centerDispersion": { "x": 1, "y": 1 },
+                "relativeSizeAvg": 130,
+                "relativeSizeDispersion": 5,
+                "terrain": "sod.terrain.sand",
+                "zoneGuardPercent": 150,
+                "excludeFactionZones": ["P1", "P2", "P3", "P4"],
+                "towns": {
+                    "main": null,
+                    "town1": null,
+                    "town2": null,
+                    "P1": {
+                        "town": {
+                            "hasFort": true,
+                            "garisonRmg": [{ "levels": [60], "value": 20000 }]
+                        },
+                        "useZoneFaction": true,
+                        "tilesToTarget": 8,
+                        "closeToConnection": "CC_P1_0_main"
+                    },
+                    "P2": {
+                        "town": {
+                            "hasFort": true,
+                            "garisonRmg": [{ "levels": [60], "value": 20000 }]
+                        },
+                        "useZoneFaction": true,
+                        "tilesToTarget": 8,
+                        "closeToConnection": "CC_P2_0_main"
+                    }
+                },
+
+                "guardGroupLimit": 150000,
+                "maxRoadLevel": "Gravel",
+
+                "generators": {
+                    "banks": {
+                        "isEnabled": true,
+                        "maxUniqueFactions": 10,
+                        "records": {
+                            "utopia": {
+                                "id": "sod.map.utopia",
+                                "frequency": 20000,
+                                "guard": 30000
+                            },
+                            "consa": {
+                                "id": "sod.map.conservatory",
+                                "frequency": 2000,
+                                "guard": -1
+                            },
+                            "hive": { "id": "sod.map.hive", "frequency": 4000, "guard": -1 },
+                            "shop": {
+                                "id": "hota.map.experimentalShop",
+                                "frequency": 2000,
+                                "guard": -1
+                            },
+                            "picket": {
+                                "id": "hota.map.wolfRaiderPicket",
+                                "frequency": 4000,
+                                "guard": -1
+                            }
+                        }
+                    },
+                    "mines": {
+                        "isEnabled": true,
+                        "records": {
+                            "wood": { "frequency": 0 },
+                            "ore": { "frequency": 0 },
+                            "mercury": { "frequency": 0 },
+                            "sulfur": { "frequency": 0 },
+                            "crystal": { "frequency": 0 },
+                            "gems": { "frequency": 0 }
+                        }
+                    },
+                    "pandoras": {
+                        "isEnabled": true,
+                        "records": {
+                            "T1": { "frequency": 0 },
+                            "T2A": { "frequency": 0 },
+                            "T2B": { "frequency": 0 },
+                            "T3A": { "frequency": 0 },
+                            "T3B": { "frequency": 0 },
+                            "T4A": { "frequency": 0 },
+                            "T4B": { "frequency": 0 },
+                            "T5A": { "frequency": 0 },
+                            "T5B": { "frequency": 0 },
+                            "T6A": { "frequency": 300 },
+                            "T6B": { "frequency": 300 },
+                            "T7A": { "frequency": 500 },
+                            "T7B": { "frequency": 500 },
+                            "T8": { "frequency": 500 },
+
+                            "spControl": { "frequency": 0 },
+                            "spAll": { "frequency": 0 }
+                        }
+                    }
+                },
+
+                "scoreTargets": {
+                    "010_ControlScrolls": { "isEnabled": false },
+                    "110_Utopia": {
+                        "isEnabled": true,
+                        "preferredHeats": [7, 8, 9],
+                        "generatorsInclude": ["banks"],
+                        "score": {
+                            "ArtStat": {
+                                "target": 250000,
+                                "minSingle": 5000,
+                                "maxSingle": -1,
+                                "maxRemain": 200000
+                            },
+                            "ArtSupport": {
+                                "target": 200000,
+                                "minSingle": 8000,
+                                "maxSingle": -1,
+                                "maxRemain": 150000
+                            },
+                            "Gold": {
+                                "target": 300000,
+                                "minSingle": 20000,
+                                "maxSingle": -1,
+                                "maxRemain": 100000
+                            },
+
+                            "Control": {
+                                "target": 200000,
+                                "minSingle": 40000,
+                                "maxSingle": 40000,
+                                "maxRemain": 200000
+                            }
+                        }
+                    },
+                    "111_ControlArts": {
+                        "isEnabled": true,
+                        "placementOrder": -1,
+                        "preferredHeats": [9],
+                        "guardGroupLimit": 0,
+                        "score": {
+                            "Control": { "target": 320000, "minSingle": 40000, "maxSingle": 40000 }
+                        }
+                    },
+                    "120_HighArmy": {
+                        "isEnabled": true,
+                        "preferredHeats": [0, 1, 2],
+                        "openPandoras": false,
+                        "score": {
+                            "Army": { "target": 100000, "maxSingle": -1, "consumeRemain": true },
+                            "ArmyDwelling": {
+                                "target": 40000,
+                                "maxSingle": -1,
+                                "maxRemain": 20000,
+                                "consumeRemain": true
+                            },
+                            "ArmyAux": {
+                                "target": 250000,
+                                "maxSingle": -1,
+                                "minSingle": 30000,
+                                "maxRemain": 60000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "130_MidArmy": { "isEnabled": false },
+                    "140_LowArmy": { "isEnabled": false },
+                    "310_HighSupportVisitables": { "isEnabled": false },
+                    "320_HighArtsAndBanks": {
+                        "isEnabled": true,
+                        "preferredHeats": [1, 2, 3, 4, 5, 6],
+                        "score": {
+                            "Resource": {
+                                "target": 60000,
+                                "maxSingle": 50000,
+                                "minSingle": 8000,
+                                "maxRemain": 50000,
+                                "consumeRemain": true
+                            },
+                            "Gold": {
+                                "target": 150000,
+                                "maxSingle": 15000,
+                                "minSingle": 5000,
+                                "maxRemain": 10000
+                            },
+
+                            "ArtStat": {
+                                "target": 150000,
+                                "maxSingle": -1,
+                                "minSingle": 6000,
+                                "maxRemain": 12000,
+                                "consumeRemain": true
+                            },
+                            "ArtSupport": {
+                                "target": 100000,
+                                "maxSingle": -1,
+                                "minSingle": 8000,
+                                "maxRemain": 16000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "410_HighOffensiveSpells": { "isEnabled": false },
+                    "420_HighCommonSpells": { "isEnabled": false },
+                    "430_MidOffensiveSpells": { "isEnabled": false },
+                    "440_MidCommonSpells": { "isEnabled": false },
+                    "450_LowOffensiveSpells": { "isEnabled": false },
+                    "510_XpPandoras": {
+                        "isEnabled": true,
+                        "score": {
+                            "Experience": {
+                                "target": 100000,
+                                "maxSingle": -1,
+                                "minSingle": 12000,
+                                "maxRemain": 24000,
+                                "consumeRemain": true
+                            }
+                        }
+                    },
+                    "520_PermanentXp": { "isEnabled": false },
+                    "530_GuardedTreasureChests": { "isEnabled": false },
+                    "610_Mid": { "isEnabled": false },
+                    "620_GuardedResources": { "isEnabled": false },
+                    "630_LowUnguarded": { "isEnabled": false },
+                    "810_SegmentScatter": { "isEnabled": true },
+                    "910_RoadScatter": { "isEnabled": true },
+
+                    "920_RoadMid1": { "isEnabled": false },
+                    "930_RoadMid2": { "isEnabled": false },
+                    "940_ExitMid1": { "isEnabled": false }
+                }
+            },
+
+            "P1": {
+                "base": "Common",
+                "isNormal": true,
+                "player": "Red",
+                "centerAvg": { "x": 15, "y": 15 },
+                "towns": {
+                    "town1": { "excludeFactionZones": ["P1"] },
+                    "town2": { "excludeFactionZones": ["P1"] },
+                    "main": { "tilesToTarget": 20, "closeToConnection": "CC_P1_0_main" }
+                }
+            },
+            "P2": {
+                "base": "Common",
+                "isNormal": true,
+                "player": "Blue",
+                "centerAvg": { "x": 120, "y": 120 },
+                "towns": {
+                    "town1": { "excludeFactionZones": ["P2"] },
+                    "town2": { "excludeFactionZones": ["P2"] },
+                    "main": { "tilesToTarget": 20, "closeToConnection": "CC_P2_0_main" }
+                }
+            },
+            "P3": {
+                "base": "Common",
+                "isNormal": true,
+                "player": "Tan",
+                "centerAvg": { "x": 120, "y": 15 },
+                "towns": {
+                    "town1": { "excludeFactionZones": ["P3"] },
+                    "town2": { "excludeFactionZones": ["P3"] },
+                    "main": { "tilesToTarget": 20, "closeToConnection": "CC_P3_0_main" }
+                }
+            },
+            "P4": {
+                "base": "Common",
+                "isNormal": true,
+                "player": "Green",
+                "centerAvg": { "x": 15, "y": 120 },
+                "towns": {
+                    "town1": { "excludeFactionZones": ["P4"] },
+                    "town2": { "excludeFactionZones": ["P4"] },
+                    "main": { "tilesToTarget": 20, "closeToConnection": "CC_P4_0_main" }
+                }
+            },
+            "CC": {
+                "base": "Treasure",
+                "isNormal": true,
+                "player": "None",
+                "centerAvg": { "x": 72, "y": 72 }
+            }
+        },
+        "connections": {
+            "CC_P1": {
+                "from": "CC",
+                "to": "P1",
+                "paths": {
+                    "CC_P1_0_main": { "guard": 100000 },
+                    "CC_P1_alt1": { "guard": 100000, "road": "BorderPoints" },
+                    "CC_P1_alt2": { "guard": 100000, "road": "BorderPoints" }
+                }
+            },
+            "CC_P2": {
+                "from": "CC",
+                "to": "P2",
+                "paths": {
+                    "CC_P2_0_main": { "mirrorGuard": "CC_P1_0_main" },
+                    "CC_P2_alt1": { "mirrorGuard": "CC_P1_alt1", "road": "BorderPoints" },
+                    "CC_P2_alt2": { "mirrorGuard": "CC_P1_alt2", "road": "BorderPoints" }
+                }
+            },
+            "CC_P3": {
+                "from": "CC",
+                "to": "P3",
+                "paths": {
+                    "CC_P3_0_main": { "guard": 100000 },
+                    "CC_P3_alt1": { "guard": 100000, "road": "BorderPoints" },
+                    "CC_P3_alt2": { "guard": 100000, "road": "BorderPoints" }
+                }
+            },
+            "CC_P4": {
+                "from": "CC",
+                "to": "P4",
+                "paths": {
+                    "CC_P4_0_main": { "mirrorGuard": "CC_P3_0_main" },
+                    "CC_P4_alt1": { "mirrorGuard": "CC_P3_alt1", "road": "BorderPoints" },
+                    "CC_P4_alt2": { "mirrorGuard": "CC_P3_alt2", "road": "BorderPoints" }
+                }
+            }
+        },
+        "rotationDegreeDispersion": 50,
+        "allowFlip": true,
+        "stdSkillsWarrior": [
+            { "skillId": "sod.skill.offense", "level": 0 },
+            { "skillId": "sod.skill.archery", "level": 0 },
+            { "skillId": "sod.skill.magicEarth", "level": 0 }
+        ],
+        "stdSkillsMage": [
+            { "skillId": "sod.skill.wisdom", "level": 0 },
+            { "skillId": "sod.skill.magicAir", "level": 0 },
+            { "skillId": "sod.skill.magicEarth", "level": 0 }
+        ]
+    },
+    "config": {
+        "allowSpecialWeeks": false,
+        "hasRoundLimit": true,
+        "roundLimit": 100
+    },
+    "disabledArtifacts": {
+        "sod.artifact.cape.resourceCrystal": true,
+        "sod.artifact.ring.resourceGems": true,
+        "sod.artifact.misc.resourceCrystal": true,
+        "sod.artifact.misc.resourceOre": true,
+        "sod.artifact.ring.resourceSulfur": true,
+        "sod.artifact.misc.resourceWood": true,
+        "sod.artifact.misc.gold1": true,
+        "sod.artifact.misc.gold2": true,
+        "sod.artifact.misc.gold3": true,
+        "sod.artifact.misc.growth2": true,
+        "sod.artifact.misc.growth3": true,
+        "sod.artifact.misc.growth4": true,
+        "sod.artifact.misc.growth5": true,
+        "sod.artifact.misc.growth6": true
+    },
+    "disabledHeroes": {},
+    "disabledSkills": {}
+}

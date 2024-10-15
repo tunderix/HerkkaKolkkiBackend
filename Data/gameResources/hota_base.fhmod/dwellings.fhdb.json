@@ -1,0 +1,156 @@
+[
+    {
+        "scope": "dwellings",
+
+        "compactCols": ["creatureIds", "objectDefs"],
+        "records": {
+            "dw.pikeman": [["sod.unit.pikeman"], "avgpike0"],
+            "dw.archer": [["sod.unit.archer"], "avgcros0"],
+            "dw.griffin": [["sod.unit.griffin"], "avggrff0"],
+            "dw.swordsman": [["sod.unit.swordsman"], "avgswor0"],
+            "dw.monk": [["sod.unit.monk"], "avgmonk0"],
+            "dw.cavalier": [["sod.unit.cavalier"], "avgcavl0"],
+            "dw.angel": [["sod.unit.angel"], "avgangl0"],
+
+            "dw.centaur": [["sod.unit.centaur"], "avgcent0"],
+            "dw.dwarf": [["sod.unit.dwarf"], "avgdwrf0"],
+            "dw.woodElf": [["sod.unit.woodElf"], "avgelf0"],
+            "dw.pegasus": [["sod.unit.pegasus"], "avgpega0"],
+            "dw.dendroidGuard": [["sod.unit.dendroidGuard"], "avgtree0"],
+            "dw.unicorn": [["sod.unit.unicorn"], { "m": { "": "avgunic0", "A": "avg2uni" } }],
+            "dw.greenDragon": [["sod.unit.greenDragon"], "avggdrg0"],
+
+            "dw.gremlin": [["sod.unit.gremlin"], "avggrem0"],
+            "dw.stoneGargoyle": [["sod.unit.stoneGargoyle"], "avggarg0"],
+
+            "dw.mage": [["sod.unit.mage"], "avgmage0"],
+            "dw.genie": [["sod.unit.genie"], "avggeni0"],
+            "dw.naga": [["sod.unit.naga"], "avgnaga0"],
+            "dw.giant": [["sod.unit.giant"], "avgtitn0"],
+
+            "dw.skeleton": [["sod.unit.skeleton"], "avgskel0"],
+            "dw.walkingDead": [["sod.unit.walkingDead"], "avgzomb0"],
+            "dw.wight": [["sod.unit.wight"], "avgwght0"],
+            "dw.vampire": [["sod.unit.vampire"], "avgvamp0"],
+            "dw.lich": [["sod.unit.lich"], "avglich0"],
+            "dw.blackKnight": [["sod.unit.blackKnight"], "avgbkni0"],
+            "dw.boneDragon": [["sod.unit.boneDragon"], "avgbone0"],
+
+            "dw.troglodyte": [["sod.unit.troglodyte"], "avgtrog0"],
+            "dw.harpy": [["sod.unit.harpy"], "avgharp0"],
+            "dw.beholder": [["sod.unit.beholder"], "avgbhld0"],
+            "dw.medusa": [["sod.unit.medusa"], "avgmdsa0"],
+            "dw.minotaur": [["sod.unit.minotaur"], "avgmino0"],
+            "dw.manticore": [["sod.unit.manticore"], "avgmant0"],
+            "dw.redDragon": [["sod.unit.redDragon"], "avgrdrg0"],
+
+            "dw.imp": [["sod.unit.imp"], "avgimp0"],
+            "dw.gog": [["sod.unit.gog"], "avggogs0"],
+            "dw.hellHound": [["sod.unit.hellHound"], "avghell0"],
+            "dw.demon": [["sod.unit.demon"], "avgdemn0"],
+            "dw.pitFiend": [["sod.unit.pitFiend"], "avgpit0"],
+            "dw.efreet": [["sod.unit.efreet"], "avgefre0"],
+            "dw.devil": [["sod.unit.devil"], "avgdevl0"],
+
+            "dw.gnoll": [["sod.unit.gnoll"], "avggnll0"],
+            "dw.lizardman": [["sod.unit.lizardman"], "avglzrd0"],
+            "dw.serpentFly": [["sod.unit.serpentFly"], "avgdfly0"],
+            "dw.basilisk": [["sod.unit.basilisk"], "avgbasl0"],
+            "dw.gorgon": [["sod.unit.gorgon"], "avggorg0"],
+            "dw.wyvern": [["sod.unit.wyvern"], "avgwyvn0"],
+            "dw.hydra": [["sod.unit.hydra"], "avghydr0"],
+
+            "dw.goblin": [["sod.unit.goblin"], "avggobl0"],
+            "dw.wolfRider": [["sod.unit.wolfRider"], "avgwolf0"],
+            "dw.orc": [["sod.unit.orc"], "avgorcg0"],
+            "dw.ogre": [["sod.unit.ogre"], "avgogre0"],
+            "dw.roc": [["sod.unit.roc"], "avgrocs0"],
+            "dw.cyclop": [["sod.unit.cyclop"], "avgcycl0"],
+            "dw.behemoth": [["sod.unit.behemoth"], "avgbhmt0"],
+
+            "dw.pixie": [["sod.unit.pixie"], "avgpixie"],
+            "dw.airElemental": [
+                ["sod.unit.airElemental"],
+                { "m": { "WIDE": "avgair0", "": "avg2ela" } }
+            ],
+            "dw.waterElemental": [
+                ["sod.unit.waterElemental"],
+                { "m": { "WIDE": "avgwatr0", "": "avg2elw" } }
+            ],
+            "dw.fireElemental": [
+                ["sod.unit.fireElemental"],
+                { "m": { "WIDE": "avgfire0", "": "avg2elf" } }
+            ],
+            "dw.earthElemental": [
+                ["sod.unit.earthElemental"],
+                { "m": { "WIDE": "avgerth0", "": "avg2ele" } }
+            ],
+            "dw.psychicElemental": [["sod.unit.psychicElemental"], "avgelp"],
+            "dw.firebird": [["sod.unit.firebird"], "avgfbrd"],
+
+            "hota.dw.nimph": [["hota.unit.nimph"], "nimphfo"],
+            "hota.dw.crewMate": [["hota.unit.crewMate"], "swshcamp"],
+            "hota.dw.pirate": [["hota.unit.pirate"], "fregat"],
+            "hota.dw.stormbird": [["hota.unit.stormbird"], "nestas"],
+            "hota.dw.seaWitch": [["hota.unit.seaWitch"], "towerza"],
+            "hota.dw.nix": [["hota.unit.nix"], { "m": { "": "fortnix", "A": "fortnixr" } }],
+            "hota.dw.seaSerpent": [
+                ["hota.unit.seaSerpent"],
+                { "m": { "": "hasphtpl", "WIDE": "haspwtpl" } }
+            ],
+
+            "dw.peasant": [["sod.unit.peasant"], "avgpeas"],
+            "dw.halfling": [["sod.unit.halfling"], "avghalf"],
+            "dw.boar": [["sod.unit.boar"], "avgboar"],
+            "dw.rogue": [["sod.unit.rogue"], "avgrog"],
+            "dw.nomad": [["sod.unit.nomad"], "avgnomd"],
+            "dw.mummy": [["sod.unit.mummy"], "avgmumy"],
+            "dw.sharpshooter": [["sod.unit.sharpshooter"], "avgshrp"],
+            "dw.troll": [["sod.unit.troll"], "avgtrll"],
+            "dw.enchanter": [["sod.unit.enchanter"], "avgench"],
+            "dw.fairieDragon": [["sod.unit.fairieDragon"], "avgfdrg"],
+            "dw.rustDragon": [["sod.unit.rustDragon"], "avgrust"],
+            "dw.crystalDragon": [["sod.unit.crystalDragon"], "avgcdrg"],
+            "dw.azureDragon": [["sod.unit.azureDragon"], "avgazur"],
+
+            "hota.dw.leprechaun": [["hota.unit.leprechaun"], "avglprch"],
+            "hota.dw.satyr": [["hota.unit.satyr"], "avgsaty0"],
+            "hota.dw.fangarm": [["hota.unit.fangarm"], "avgfngrm"],
+
+            "dw.stoneGolem": [
+                [
+                    "sod.unit.stoneGolem",
+                    "sod.unit.ironGolem",
+                    "sod.unit.goldGolem",
+                    "sod.unit.diamondGolem"
+                ],
+                "avggolm0"
+            ],
+            "dw.allElem": [
+                [
+                    "sod.unit.airElemental",
+                    "sod.unit.waterElemental",
+                    "sod.unit.fireElemental",
+                    "sod.unit.earthElemental"
+                ],
+                "avgelem0"
+            ],
+            "dw.warMachine": [
+                ["sod.unit.ammoCart", "sod.unit.firstAidTent", "sod.unit.ballista"],
+                "avgsieg0"
+            ],
+            "dw.refugee": [[], "avgrefg0"],
+            "hota.dw.cannonBlacksmith": [["hota.unit.cannon"], "avcnbksm"]
+        }
+    },
+
+    {
+        "scope": "dwellings",
+
+        "compactCols": ["hasPlayer"],
+        "records": {
+            "dw.warMachine": [false],
+            "hota.dw.cannonBlacksmith": [false]
+        }
+    }
+]

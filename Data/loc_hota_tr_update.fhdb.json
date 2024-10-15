@@ -1,0 +1,613 @@
+[
+    {
+        "records": {
+            "hota.unit.assid": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Ayssid" } },
+                    "namePlural": { "ts": { "en_US": "Ayssid" } }
+                }
+            },
+            "hota.unit.cannon": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Cannon" } },
+                    "namePlural": { "ts": { "en_US": "Cannon" } }
+                }
+            },
+            "hota.unit.corsair": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Corsair" } },
+                    "namePlural": { "ts": { "en_US": "Corsair" } }
+                }
+            },
+            "hota.unit.crewMate": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Crew Mate" } },
+                    "namePlural": { "ts": { "en_US": "Crew Mate" } }
+                }
+            },
+            "hota.unit.fangarm": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Fangarm" } },
+                    "namePlural": { "ts": { "en_US": "Fangarm" } }
+                }
+            },
+            "hota.unit.haspid": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Haspid" } },
+                    "namePlural": { "ts": { "en_US": "Haspid" } }
+                }
+            },
+            "hota.unit.leprechaun": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Leprechaun" } },
+                    "namePlural": { "ts": { "en_US": "Leprechaun" } }
+                }
+            },
+            "hota.unit.nimph": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Nymph" } },
+                    "namePlural": { "ts": { "en_US": "Nymph" } }
+                }
+            },
+            "hota.unit.nix": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Nix" } },
+                    "namePlural": { "ts": { "en_US": "Nix" } }
+                }
+            },
+            "hota.unit.nixWarrior": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Nix Warrior" } },
+                    "namePlural": { "ts": { "en_US": "Nix Warrior" } }
+                }
+            },
+            "hota.unit.oceanid": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Oceanid" } },
+                    "namePlural": { "ts": { "en_US": "Oceanid" } }
+                }
+            },
+            "hota.unit.pirate": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Pirate" } },
+                    "namePlural": { "ts": { "en_US": "Pirate" } }
+                }
+            },
+            "hota.unit.satyr": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Satyr" } },
+                    "namePlural": { "ts": { "en_US": "Satyr" } }
+                }
+            },
+            "hota.unit.seaMan": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Seaman" } },
+                    "namePlural": { "ts": { "en_US": "Seaman" } }
+                }
+            },
+            "hota.unit.seaSerpent": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Sea Serpent" } },
+                    "namePlural": { "ts": { "en_US": "Sea Serpent" } }
+                }
+            },
+            "hota.unit.seaWitch": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Sea Witch" } },
+                    "namePlural": { "ts": { "en_US": "Sea Witch" } }
+                }
+            },
+            "hota.unit.seawolf": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Sea Dog" } },
+                    "namePlural": { "ts": { "en_US": "Sea Dog" } }
+                }
+            },
+            "hota.unit.sorceress": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Sorceress" } },
+                    "namePlural": { "ts": { "en_US": "Sorceress" } }
+                }
+            },
+            "hota.unit.steelGolem": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Steel Golem" } },
+                    "namePlural": { "ts": { "en_US": "Steel Golem" } }
+                }
+            },
+            "hota.unit.stormbird": {
+                "pres": {
+                    "name": { "ts": { "en_US": "Stormbird" } },
+                    "namePlural": { "ts": { "en_US": "Stormbird" } }
+                }
+            }
+        },
+        "scope": "units"
+    },
+    {
+        "records": {
+            "hota.artifact.battleMachine.cannon": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Cannon}\\n\\nUse this war machine to target your enemy troops and fortifications in combat."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Cannon" } }
+                }
+            },
+            "hota.artifact.boots.pathfind": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Wayfarer's Boots}\\n\\nWorn on the feet, these boots allow your hero to move over rough terrain without penalty."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Wayfarer's Boots" } }
+                }
+            },
+            "hota.artifact.cape.noMagic12": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Cape of Silence}\\n\\nWhile wearing this cape, neither you nor your opponent will be able to cast level 1-2 spells during combat."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Cape of Silence" } }
+                }
+            },
+            "hota.artifact.complex.buff": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Ironfist of the Ogre}\\n\\nIn addition to component effect the Ironfist of the Ogre casts these spells on expert level at the beginning of combat on all of your creatures for fifty rounds: Haste, Bloodlust, Fire Shield, and Counterstrike."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Ironfist of the Ogre" } }
+                }
+            },
+            "hota.artifact.complex.diplomacy": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Diplomat's Cloak}\\n\\nIn addition to component effect this cloak allows your hero to retreat or surrender when battling neutral monsters or defending a town as well as when attacking and casting a spell in the first round of a combat. Multiplies your hero army strength by 3 (for neutral armies and Thieves guild)."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Diplomat's Cloak" } }
+                }
+            },
+            "hota.artifact.complex.gold": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Golden Goose}\\n\\nIn addition to component effect the Golden Goose increases your income by 4750 gold per day."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Golden Goose" } }
+                }
+            },
+            "hota.artifact.complex.resist": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Pendant of Reflection}\\n\\nIn addition to component effect this item increases your chance to resist a hostile spell by 20%."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Pendant of Reflection" } }
+                }
+            },
+            "hota.artifact.helm.int6": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Crown of the Five Seas}\\n\\nWorn on the head, this item increases your Knowledge skill by +6."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Crown of the Five Seas" } }
+                }
+            },
+            "hota.artifact.misc.interfere": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Charm of Eclipse}\\n\\nThis item reduces the Power skill of enemy hero by 10% during combat."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Charm of Eclipse" } }
+                }
+            },
+            "hota.artifact.misc.summon": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Horn of the Abyss}\\n\\nAfter a stack of living creatures is slain, a stack of Fangarms will rise in their stead and will stay loyal to the hero after the battle concludes. Total Hit Points of this stack will be equal to half of the slain stack's total Hit Points, but quantity of the Fangarms summoned thus should not exceed half of quantity of creatures in the slain stack. Slaying Fangarms will not trigger the Horn effect."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Horn of the Abyss" } }
+                }
+            },
+            "hota.artifact.misc.unluck1a": {
+                "pres": {
+                    "descr": {
+                        "ts": { "en_US": "{Runes of Imminency}\\n\\nDecrease enemy's Luck by 1." }
+                    },
+                    "name": { "ts": { "en_US": "Runes of Imminency" } }
+                }
+            },
+            "hota.artifact.misc.unluck1b": {
+                "pres": {
+                    "descr": {
+                        "ts": { "en_US": "{Demon's Horseshoe}\\n\\nDecreases enemy's Luck by 1." }
+                    },
+                    "name": { "ts": { "en_US": "Demon's Horseshoe" } }
+                }
+            },
+            "hota.artifact.misc.unluck2": {
+                "pres": {
+                    "descr": {
+                        "ts": { "en_US": "{Shaman's Puppet}\\n\\nDecreases enemy's Luck by 2." }
+                    },
+                    "name": { "ts": { "en_US": "Shaman's Puppet" } }
+                }
+            },
+            "hota.artifact.misc.unmorale1": {
+                "pres": {
+                    "descr": {
+                        "ts": { "en_US": "{Hideous Mask}\\n\\nDecreases enemy's Morale by 1." }
+                    },
+                    "name": { "ts": { "en_US": "Hideous Mask" } }
+                }
+            },
+            "hota.artifact.neck.unmorale2": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Pendant of Downfall}\\n\\nWorn about the neck, this item decreases enemy's Morale by 2."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Pendant of Downfall" } }
+                }
+            },
+            "hota.artifact.ring.interfere": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Seal of Sunset}\\n\\nWorn on a finger, this item reduces the Power skill of enemy hero by 10% during combat."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Seal of Sunset" } }
+                }
+            },
+            "hota.artifact.ring.noResurrect": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Ring of Oblivion}\\n\\nWhen worn, makes all losses in the battle irrevocable: corpses disappear right after unit's death, spells that may revitalize creatures are banned for use, vampirism does not bring back dead units, and undead cannot be raised using necromancy after battle."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Ring of Oblivion" } }
+                }
+            },
+            "hota.artifact.ring.unmorale1": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Ring of Suppression}\\n\\nWorn on the finger, this ring decreases enemy's Morale by 1."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Ring of Suppression" } }
+                }
+            },
+            "hota.artifact.shield.def7": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Shield of Naval Glory}\\n\\nThis left-handed item increases your Defense skill by +7."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Shield of Naval Glory" } }
+                }
+            },
+            "hota.artifact.sword.att7": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Trident of Dominion}\\n\\nThis right-handed weapon increases your Attack skill by +7."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Trident of Dominion" } }
+                }
+            },
+            "hota.artifact.torso.interfere": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Plate of Dying Light}\\n\\nWorn on a torso, this item reduces the Power skill of enemy hero by 25% during combat."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Plate of Dying Light" } }
+                }
+            },
+            "hota.artifact.torso.spl6": {
+                "pres": {
+                    "descr": {
+                        "ts": {
+                            "en_US": "{Royal Armor of Nix}\\n\\nWorn on the torso, this item increases your Power skill by +6."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Royal Armor of Nix" } }
+                }
+            }
+        },
+        "scope": "artifacts"
+    },
+    {
+        "records": {
+            "hota.hero.campaign.cvc01": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Bidley is one of the most successful pirates operating near Erathia shores. He is ready to accept any challenge and is able to emerge unscathed from any situation. It seems like he has a rival in every world's corner, but he is always able to escape the trouble. Apart from being an excellent warrior, having artisan skills in both pistol and sabre wielding, he also trains his crew personally."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Bidley" } }
+                }
+            },
+            "hota.hero.campaign.cvc02": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "He is a king of a half-legendary sea kin that was counted extinct. Tark realized that in order for his people to return he has to get help from powerful allies. Pirates became his new brothers in arms. As all nix, he is a powerful warrior, able to fight on land and sea. Other nix praise him and hold as a great example."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Tark" } }
+                }
+            },
+            "hota.hero.cove.plp01": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Not many wish to get into Corkes' enemy list.  This quick-tempered pirate is one of the most experienced and cruel sea dogs. Many merchants know that it is better to submit the goods willingly than to start a suicidal battle with him.  He is easily distinguishable by the eye patch that he never takes off."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Corkes" } }
+                }
+            },
+            "hota.hero.cove.plp02": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Brother of legendary Bidley. Not as harsh and lucky, Jeremy loves fun, brewages and beautiful women. He has a thing for weapons, and collects all the newest inventions. A shot thunder is more pleasing for him than any music. Crewmen say that he is able to kill a gull a hundred feet away from a cannon."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Jeremy" } }
+                }
+            },
+            "hota.hero.cove.plp03": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Illor fled AvLee after his kin could no more bear his stuck-up demeanor. Sky high self-esteem led him to obsession with aerial creatures. He found himself a captain of a pirate ship, but his attitude got old among the crew quickly. Marooned on an island which giant flying beasts made their nesting place, Illor ended up making sky dwellers tame after a few years."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Illor" } }
+                }
+            },
+            "hota.hero.cove.plp04": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "The leader of the mysterious priestesses' cult that worships the sea has stepped out from the shadows not so long ago. Nobody knows whom this woman was and where did she came from.  However, everyone who met Casmetra mentions her beauty and her power in magic. Many believed that she joined the pirates in pursuit of her own goals. However, with years to pass the priestesses and the corsairs became closest allies."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Casmetra" } }
+                }
+            },
+            "hota.hero.cove.plp05": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Derek was one of the slaves on the galleys. He started the riot once with other captives, and after killing the owners, captured the ship. Since then, Derek and his crew joined the Regna pirates. He is different from other captains in his will to work with other crewmen. He also never inflicts physical punishment."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Derek" } }
+                }
+            },
+            "hota.hero.cove.plp06": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Leena was a daughter of a noble from one of the maritime cities of Erathia. Having a wild spirit since childhood, she escaped on a stolen family caravel when her father attempted to marry her off. Surprisingly, she was able to find common language with the pirates of Regna. She is probably valued for her spirit and numerous connections on the land that she uses to operate her smuggling."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Leena" } }
+                }
+            },
+            "hota.hero.cove.plp07": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Eovacius never learnt magic. All his magical talent was inborn. He was raised in a maritime city where he used his talent to steal on the markets. He became a prosperous and influential man until he got too many annoying and powerful rivals in the government. After that the natural born mage left his homeland and chose the life of a pirate."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Eovacius" } }
+                }
+            },
+            "hota.hero.cove.plp08": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Spint once was a very talented apprentice mage learning at the academy in Bracada. He was caught by the Krewlod barbarians and sold as a slave on galley. The galley captain noticed his magical power and offered him a boatswain position. Now Spint is a captain himself. He sinks the ships near the shores of Krewlod and enjoys his new life."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Spint" } }
+                }
+            },
+            "hota.hero.cove.plp09": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "While being an experienced pirate, Andal did not always consider himself as a mage or a rogue. He was an ordinary merchant until bankrupting and getting too many debts one day. He started searching for a way to get fast and easy money. After leaving his home, he shortly returned as a known smuggler. He usually trades gems and mountain crystals. It is a mystery where he gets them from, however."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Andal" } }
+                }
+            },
+            "hota.hero.cove.plp10": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Even the most vicious pirate hunters stay away from this outlander. Nobody knows where Manfred came, but it is known that he can wage fire on galleons with a single hand swing. Pirates dislike Manfred for his horrible accent and his not any less horrible character; however they respect him as a mercenary battle mage."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Manfred" } }
+                }
+            },
+            "hota.hero.cove.plp11": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Zilare was a library keeper in Erathia, having dedicated his life to browsing through old archives. However, he couldn't always keep things together in his head. Fired over supposed stealing a rare book, he became a cook on a pirate ship. Later life led Zilare to developing arcane powers. He learned to control the memory of allies and enemies alike."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Zilare" } }
+                }
+            },
+            "hota.hero.cove.plp12": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "There is little known about Astra's past, and she does not hurry to tell much. The only detail known is that she visited almost every corner of the world in order to master the Water Magic. She fulfilled her wish of mastering this school after joining the Sea Priestesses."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Astra" } }
+                }
+            },
+            "hota.hero.cove.plp13": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "To anger the daughter of Earless Nylse means to sign a death pact. Every pirate understands that there is no woman more deadly and insidious than Anabel. Her father was one of the cruelest corsairs, and his daughter follows his steps. Her grace and skill encourages men to fight at their limits."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Anabel" } }
+                }
+            },
+            "hota.hero.cove.plp14": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Dargem's past is quite legendary. They say that he alone captured a fort; the defenders' arrows simply could not reach him. Little is known of the time Dargem spent in the dungeons of Nighon as an apprentice warlock, but it's obvious that underworld magic is his ace. Barraging his ship with cannonballs and arrows is a notorious waste of time."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Dargem" } }
+                }
+            },
+            "hota.hero.cove.plp15": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "It is said that Cassiopeia was the lover of some Regnan mage, and fell victim to one of his unsuccessful experiments.  It is unknown if it is truly possible to turn an alive soul into a nymph. All that is known is that other nymphs accept Cassiopeia for more than an equal kind. They gladly follow her into the battle."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Cassiopeia" } }
+                }
+            },
+            "hota.hero.cove.plp16": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "This girl has a dark past. Once a ranger, she could see the enemies and obstacles to the farthest distance away. After a disagreement with the \"colleagues\" she joined the pirates. She got a \"Sharp-eye\" nickname amongst the bandits."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Miriam" } }
+                }
+            },
+            "hota.hero.cove.plp17": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Since young age Elmore has dreamt about becoming a great sailor. Spending years far from the shore, he has put a lot of effort to make his dream come true. Many pirate captains are famous for their skill of navigation, but Elmore is capable of true magic even onboard the poorest junk."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Elmore" } }
+                }
+            },
+            "sod.hero.castle.kx003": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Beatrice was a talented follower of Erathian scouts - not yielding much to famous elven pathfinders. Talents of the girl had been noticed by Catherine herself and thence former scout became a general. However, her skills are still with her, she is one of the best at her cause."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Beatrice" } }
+                }
+            },
+            "sod.hero.fortress.wx122": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Kinkeria was one of the most respected witches of her tribe. She was always seeking for knowledge, and it was easy for her to comprehend the essence of any phenomena. She has been given such tasks over which many wisemen remained puzzled for years. With that being said, it was no surprise when she offered her service to the king of Tatalia."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Kinkeria" } }
+                }
+            },
+            "sod.hero.necropolis.dx071": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "A fair took place once in the village where Giselle lived. An old druid from a nearby grove agreed to show the villagers a few simple magic tricks. Nothing he tried seemed to work out, but the old man was able to accurately pinpoint the grinning girl in the front row as the cause of his woes."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Giselle" } }
+                }
+            },
+            "sod.hero.rampart.rx020": {
+                "pres": {
+                    "bio": {
+                        "ts": {
+                            "en_US": "Following a childhood dream, Ranloo became an aide at Mestley's armory. Ancient master's gift was no lore, rather a bite to the neck and a pit in the Talon woods. Undeath wasn't fun, but Ranloo's hands got as crafty as ever. Soon he was wearing Mestley's Master Blacksmith diadem after running him through with a missile from a self-designed ballista."
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Ranloo" } }
+                }
+            }
+        },
+        "scope": "heroes"
+    },
+    {
+        "records": {
+            "hota.skill.interfere": {
+                "pres": {
+                    "descrAdvanced": {
+                        "ts": {
+                            "en_US": "{Advanced Interference}\\n\\nAdvanced Interference reduces the Power skill of enemy hero by 20% during combat."
+                        }
+                    },
+                    "descrBasic": {
+                        "ts": {
+                            "en_US": "{Basic Interference}\\n\\nBasic Interference reduces the Power skill of enemy hero by 10% during combat."
+                        }
+                    },
+                    "descrExpert": {
+                        "ts": {
+                            "en_US": "{Expert Interference}\\n\\nExpert Interference reduces the Power skill of enemy hero by 30% during comba"
+                        }
+                    },
+                    "name": { "ts": { "en_US": "Interference" } }
+                }
+            }
+        },
+        "scope": "skills"
+    },
+    {
+        "records": {
+            "hota.faction.cove": {
+                "mageClass": { "pres": { "name": { "ts": { "en_US": "Navigator" } } } },
+                "warriorClass": { "pres": { "name": { "ts": { "en_US": "Captain" } } } }
+            }
+        },
+        "scope": "factions"
+    }
+]
