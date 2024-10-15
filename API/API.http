@@ -1,6 +1,7 @@
-@API_HostAddress = http://localhost:5298
+@API_HostAddress = https://localhost:44329
 
-GET {{API_HostAddress}}/weatherforecast/
+### Get all artifacts
+GET {{API_HostAddress}}/all
 Accept: application/json
 
 ###
