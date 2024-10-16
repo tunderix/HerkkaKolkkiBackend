@@ -1,4 +1,5 @@
 ﻿using API.Models;
+using API.Models.Artifacts;
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 

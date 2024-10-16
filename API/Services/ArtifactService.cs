@@ -1,4 +1,5 @@
 ﻿using API.Models;
+using API.Models.Artifacts;
 using API.Settings;
 using Microsoft.Extensions.Options;
 using MongoDB.Bson;

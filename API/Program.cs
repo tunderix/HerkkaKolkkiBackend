@@ -1,8 +1,14 @@
 using System.Text.Json.Serialization;
 using API;
+using API.Models;
+using API.Models.Artifacts;
+using API.Models.Buildings;
 using API.Services;
 using API.Settings;
+using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
+
+BsonSerializer.RegisterSerializer(typeof(ArtifactWrapper), new ArtifactWrapperDeserializer());
 
 var builder = WebApplication.CreateBuilder(args);
 
