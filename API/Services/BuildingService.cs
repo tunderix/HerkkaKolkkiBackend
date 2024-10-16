@@ -15,9 +15,8 @@ public class BuildingService
 
     public BuildingService(IMongoClient mongoClient, IOptions<MongoSettings> mongoSettings)
     {
-        var settings = mongoSettings.Value;
-        var database = mongoClient.GetDatabase(settings.DatabaseName);
-        _buildingCollection = database.GetCollection<BuildingWrapper>(settings.BuildingCollection);
+        var database = mongoClient.GetDatabase("Heroes3");
+        _buildingCollection = database.GetCollection<BuildingWrapper>("Buildings");
     }
 
     /// <summary>

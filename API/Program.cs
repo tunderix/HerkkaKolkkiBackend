@@ -5,6 +5,7 @@ using API.Models.Artifacts;
 using API.Models.Buildings;
 using API.Services;
 using API.Settings;
+using DotNetEnv;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 
@@ -13,21 +14,27 @@ BsonSerializer.RegisterSerializer(typeof(BuildingWrapper), new BuildingWrapperDe
 
 var builder = WebApplication.CreateBuilder(args);
 
+Env.TraversePath().Load();
+/*
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
     .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
     .AddEnvironmentVariables();
-
 builder.Services.Configure<MongoSettings>(builder.Configuration.GetSection("MongoSettings"));
 
+*/
+/*
 var connectionUri = builder.Configuration.GetConnectionString("MongoConnection");
 if (string.IsNullOrEmpty(connectionUri))
 {
     throw new InvalidOperationException("MongoDB connection URI is not set in configuration.");
 }
+*/
 
-var settings = MongoClientSettings.FromConnectionString(connectionUri);
+var mongoConnectionString = Environment.GetEnvironmentVariable("MONGODB_CONNECTION_STRING");
+
+var settings = MongoClientSettings.FromConnectionString(mongoConnectionString);
 settings.ServerApi = new ServerApi(ServerApiVersion.V1);
 
 builder.Services.AddSingleton<IMongoClient>(s => new MongoClient(settings));
