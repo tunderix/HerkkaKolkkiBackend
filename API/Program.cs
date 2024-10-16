@@ -14,6 +14,11 @@ BsonSerializer.RegisterSerializer(typeof(BuildingWrapper), new BuildingWrapperDe
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+    serverOptions.ListenAnyIP(5000); // Configure the HTTP port
+});
+
 Env.TraversePath().Load();
 /*
 builder.Configuration
@@ -71,7 +76,7 @@ if (app.Environment.IsDevelopment())
     
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
