@@ -44,9 +44,9 @@ public class ArtifactService
     /// <summary>
     /// Get artifact by name.
     /// </summary>
-    /// <param name="name"></param>
+    /// <param name="nameToFind"></param>
     /// <returns></returns>
-    public async Task<Artifact> GetArtifactByNameAsync(string untranslatedName)
+    public async Task<Artifact?> GetArtifactByNameAsync(string nameToFind)
     {
         var artifactWrappers = await _artifactCollection.Find(new BsonDocument()).ToListAsync();
 
@@ -54,7 +54,7 @@ public class ArtifactService
         {
             foreach (var record in wrapper.Records)
             {
-                if (record.Value.UntranslatedName == untranslatedName)
+                if (record.Value.UntranslatedName.Contains(nameToFind))
                 {
                     return record.Value;
                 }

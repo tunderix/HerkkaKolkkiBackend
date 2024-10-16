@@ -21,7 +21,7 @@ public class ArtifactsController: ControllerBase
     /// Get all artifacts.
     /// </summary>
     /// <returns>List of all artifacts.</returns>
-    [HttpGet("all")]
+    [HttpGet("allArtifacts")]
     public async Task<ActionResult<List<Artifact>>> GetAllArtifacts()
     {
         var artifacts = await _artifactService.GetAllArtifactsAsync();

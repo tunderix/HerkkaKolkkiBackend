@@ -9,6 +9,7 @@ using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
 
 BsonSerializer.RegisterSerializer(typeof(ArtifactWrapper), new ArtifactWrapperDeserializer());
+BsonSerializer.RegisterSerializer(typeof(BuildingWrapper), new BuildingWrapperDeserializer());
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -32,6 +33,7 @@ settings.ServerApi = new ServerApi(ServerApiVersion.V1);
 builder.Services.AddSingleton<IMongoClient>(s => new MongoClient(settings));
 builder.Services.AddScoped<HeroesJsonParser>();
 builder.Services.AddSingleton<ArtifactService>();
+builder.Services.AddSingleton<BuildingService>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;
