@@ -14,12 +14,16 @@ BsonSerializer.RegisterSerializer(typeof(BuildingWrapper), new BuildingWrapperDe
 
 var builder = WebApplication.CreateBuilder(args);
 
+Env.TraversePath().Load();
+
+// Get the PORT environment variable or default to 8080
+var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+Console.WriteLine("PORT: " + port);
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
-    serverOptions.ListenAnyIP(5000); // Configure the HTTP port
+    serverOptions.ListenAnyIP(int.Parse(port));
 });
 
-Env.TraversePath().Load();
 /*
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
