@@ -4,7 +4,6 @@ using API.Models;
 using API.Models.Artifacts;
 using API.Models.Buildings;
 using API.Services;
-using API.Settings;
 using DotNetEnv;
 using MongoDB.Bson.Serialization;
 using MongoDB.Driver;
@@ -14,10 +13,10 @@ BsonSerializer.RegisterSerializer(typeof(BuildingWrapper), new BuildingWrapperDe
 
 var builder = WebApplication.CreateBuilder(args);
 
-Env.TraversePath().Load();
+Env.Load();
 
 // Get the PORT environment variable or default to 8080
-var port = Environment.GetEnvironmentVariable("PORT") ?? "8080";
+var port = Env.GetString("PORT") ?? "8080";
 Console.WriteLine("PORT: " + port);
 builder.WebHost.ConfigureKestrel(serverOptions =>
 {
@@ -41,8 +40,8 @@ if (string.IsNullOrEmpty(connectionUri))
 }
 */
 
-var mongoConnectionString = Environment.GetEnvironmentVariable("MONGODB_CONNECTION_STRING");
-
+var mongoConnectionString = Env.GetString("MONGODB_CONNECTION_STRING");
+Console.WriteLine(mongoConnectionString);
 var settings = MongoClientSettings.FromConnectionString(mongoConnectionString);
 settings.ServerApi = new ServerApi(ServerApiVersion.V1);
 
