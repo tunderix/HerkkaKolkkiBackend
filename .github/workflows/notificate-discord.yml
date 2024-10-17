@@ -1,0 +1,19 @@
+﻿name: notificate-discord.yml
+on:
+  workflow_run:
+    workflows: [ "Deploy" ]
+    types:
+      - completed
+
+
+jobs:
+  deploy:
+    name: Notificate
+    runs-on: ubuntu-latest
+  steps:
+    - name: Discord notification
+      uses: appleboy/discord-action@master
+      with:
+        webhook_id: ${{ secrets.WEBHOOK_ID }}
+        webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
+        message: ${{ github.event_name }} Triggered. A new version of the API has been deployed to Render.
