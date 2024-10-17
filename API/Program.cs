@@ -15,31 +15,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 Env.Load();
 
-// Get the PORT environment variable or default to 8080
-var port = Env.GetString("PORT") ?? "8080";
-Console.WriteLine("PORT: " + port);
-builder.WebHost.ConfigureKestrel(serverOptions =>
-{
-    serverOptions.ListenAnyIP(int.Parse(port));
-});
-
-/*
-builder.Configuration
-    .SetBasePath(Directory.GetCurrentDirectory())
-    .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-    .AddJsonFile($"appsettings.{builder.Environment.EnvironmentName}.json", optional: true, reloadOnChange: true)
-    .AddEnvironmentVariables();
-builder.Services.Configure<MongoSettings>(builder.Configuration.GetSection("MongoSettings"));
-
-*/
-/*
-var connectionUri = builder.Configuration.GetConnectionString("MongoConnection");
-if (string.IsNullOrEmpty(connectionUri))
-{
-    throw new InvalidOperationException("MongoDB connection URI is not set in configuration.");
-}
-*/
-
 var mongoConnectionString = Env.GetString("MONGODB_CONNECTION_STRING");
 Console.WriteLine(mongoConnectionString);
 var settings = MongoClientSettings.FromConnectionString(mongoConnectionString);
@@ -68,18 +43,15 @@ builder.Services.AddSwaggerGen(c =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+app.UseSwagger();
+app.UseSwaggerUI(c =>
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
-    {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Heroes API V1");
-        c.RoutePrefix = string.Empty;
-    });
-    
-}
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Heroes API V1");
+    c.RoutePrefix = string.Empty;
+});
+app.UseRouting();
 
-//app.UseHttpsRedirection();
+app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
