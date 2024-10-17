@@ -1,7 +1,4 @@
-﻿using API.Models;
-using API.Models.Artifacts;
-using API.Settings;
-using Microsoft.Extensions.Options;
+﻿using API.Models.Artifacts;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -17,7 +14,7 @@ public class ArtifactService
     /// <summary>
     /// ArtifactService constructor.
     /// </summary>
-    public ArtifactService(IMongoClient mongoClient, IOptions<MongoSettings> mongoSettings)
+    public ArtifactService(IMongoClient mongoClient)
     {
         var database = mongoClient.GetDatabase("Heroes3");
         _artifactCollection = database.GetCollection<ArtifactWrapper>("Artifacts");

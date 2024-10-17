@@ -1,6 +1,4 @@
 ﻿using API.Models.Buildings;
-using API.Settings;
-using Microsoft.Extensions.Options;
 using MongoDB.Bson;
 using MongoDB.Driver;
 
@@ -13,7 +11,7 @@ public class BuildingService
 {
     private readonly IMongoCollection<BuildingWrapper> _buildingCollection;
 
-    public BuildingService(IMongoClient mongoClient, IOptions<MongoSettings> mongoSettings)
+    public BuildingService(IMongoClient mongoClient)
     {
         var database = mongoClient.GetDatabase("Heroes3");
         _buildingCollection = database.GetCollection<BuildingWrapper>("Buildings");
