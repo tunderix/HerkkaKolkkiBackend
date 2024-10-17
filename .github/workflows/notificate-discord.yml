@@ -8,7 +8,7 @@ on:
 
 jobs:
   build:
-    name: Sending message to Discord
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: send message
