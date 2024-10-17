@@ -1,10 +1,9 @@
-﻿using MongoDB.Bson;
+﻿using API.Models.Artifact;
+using API.Models.Artifacts;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
-using System.Collections.Generic;
-using API.Models.Artifacts;
 
-namespace API.Models;
+namespace API.BsonSerialization;
 
 ///<summary>
 /// ArtifactWrapperDeserializer.cs

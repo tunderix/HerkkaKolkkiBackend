@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace API.Models.Buildings;
+namespace API.Models.Building;
 
 ///<summary>
 /// Building.cs

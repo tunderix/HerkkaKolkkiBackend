@@ -1,8 +1,8 @@
-﻿namespace API.Models.Artifacts;
+﻿namespace API.Models.Artifact;
 
 /// <summary>
 /// ArtifactWrapper.cs
 /// </summary>
-public class ArtifactWrapper : HeroesDataWrapper<Artifact>
+public class ArtifactWrapper : HeroesDataWrapper<Artifacts.Artifact>
 {
 }

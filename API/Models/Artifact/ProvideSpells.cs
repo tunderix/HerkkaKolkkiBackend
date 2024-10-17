@@ -1,6 +1,6 @@
 ﻿using MongoDB.Bson.Serialization.Attributes;
 
-namespace API.Models.Artifacts;
+namespace API.Models.Artifact;
 
 public class ProvideSpells
 {

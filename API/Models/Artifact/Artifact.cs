@@ -1,4 +1,5 @@
-﻿using MongoDB.Bson;
+﻿using API.Models.Artifact;
+using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace API.Models.Artifacts;
@@ -33,7 +34,7 @@ public class Artifact
     public string BmUnit { get; set; }
     
     [BsonElement("statBonus")]
-    public StatBonus StatBonus { get; set; }
+    public PrimaryStats PrimaryStats { get; set; }
     
     [BsonElement("calc")]
     public List<string> Calculation { get; set; }

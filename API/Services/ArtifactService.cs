@@ -1,4 +1,5 @@
-﻿using API.Models.Artifacts;
+﻿using API.Models.Artifact;
+using API.Models.Artifacts;
 using MongoDB.Bson;
 using MongoDB.Driver;
 

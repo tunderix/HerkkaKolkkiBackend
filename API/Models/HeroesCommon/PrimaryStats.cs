@@ -2,11 +2,11 @@
 
 namespace API.Models.Artifacts;
 
-public class StatBonus
+public class PrimaryStats
 {
     [BsonElement("ad")]
-    public AttackDefense Ad { get; set; }
+    public PrimaryPhysical PrimaryPhysical { get; set; }
     
     [BsonElement("magic")]
-    public Magic Magic { get; set; }
+    public PrimaryMagic PrimaryMagic { get; set; }
 }

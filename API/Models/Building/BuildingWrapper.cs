@@ -1,4 +1,4 @@
-﻿namespace API.Models.Buildings;
+﻿namespace API.Models.Building;
 
 ///<summary>
 /// BuildingWrapper.cs

@@ -1,4 +1,4 @@
-﻿using API.Models.Buildings;
+﻿using API.Models.Building;
 using MongoDB.Bson;
 using MongoDB.Driver;
 

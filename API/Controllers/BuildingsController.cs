@@ -1,4 +1,4 @@
-﻿using API.Models.Buildings;
+﻿using API.Models.Building;
 using API.Services;
 using Microsoft.AspNetCore.Mvc;
 

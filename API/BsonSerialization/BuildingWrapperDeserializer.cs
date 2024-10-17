@@ -1,8 +1,8 @@
-﻿using API.Models.Artifacts;
+﻿using API.Models.Building;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 
-namespace API.Models.Buildings;
+namespace API.BsonSerialization;
 
 ///<summary>
 /// BuildingWrapperDeserializer.cs

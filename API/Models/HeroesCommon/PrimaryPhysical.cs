@@ -2,7 +2,7 @@
 
 namespace API.Models.Artifacts;
 
-public class AttackDefense
+public class PrimaryPhysical
 {
     [BsonElement("attack")]
     public int? Attack { get; set; }

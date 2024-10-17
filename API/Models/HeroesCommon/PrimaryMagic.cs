@@ -2,7 +2,7 @@
 
 namespace API.Models.Artifacts;
 
-public class Magic
+public class PrimaryMagic
 {
     [BsonElement("int")]
     public int? Knowledge { get; set; }

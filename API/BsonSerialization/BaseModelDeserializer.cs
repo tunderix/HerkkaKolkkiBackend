@@ -1,8 +1,8 @@
-﻿using MongoDB.Bson;
+﻿using API.Models;
 using MongoDB.Bson.Serialization;
 using MongoDB.Bson.Serialization.Serializers;
 
-namespace API.Models;
+namespace API.BsonSerialization;
 
 ///<summary>
 /// BaseModelDeserializer.cs
