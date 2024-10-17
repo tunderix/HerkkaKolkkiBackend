@@ -5,13 +5,9 @@ on:
     types:
       - completed
 
-
 jobs:
-  deploy:
-    name: send message
-    runs-on: ubuntu-latest
   steps:
-    - name: Discord notification
+    - name: send message
       uses: appleboy/discord-action@master
       with:
         webhook_id: ${{ secrets.WEBHOOK_ID }}
