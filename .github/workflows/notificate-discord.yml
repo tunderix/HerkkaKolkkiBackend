@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Notificate
+    name: send message
     runs-on: ubuntu-latest
   steps:
     - name: Discord notification
