@@ -4,6 +4,7 @@ using API.Models.Artifact;
 using API.Models.Building;
 using API.Models.Faction;
 using API.Models.Terrain;
+using API.Models.Unit;
 using API.Services;
 using DotNetEnv;
 using MongoDB.Bson.Serialization;
@@ -16,6 +17,7 @@ BsonSerializer.RegisterSerializer(typeof(ArtifactWrapper), new ArtifactWrapperDe
 BsonSerializer.RegisterSerializer(typeof(BuildingWrapper), new BuildingWrapperDeserializer());
 BsonSerializer.RegisterSerializer(typeof(FactionWrapper), new FactionWrapperDeserializer());
 BsonSerializer.RegisterSerializer(typeof(TerrainWrapper), new TerrainWrapperDeserializer());
+BsonSerializer.RegisterSerializer(typeof(UnitWrapper), new UnitWrapperDeserializer());
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +43,7 @@ builder.Services.AddSingleton<ArtifactService>();
 builder.Services.AddSingleton<BuildingService>();
 builder.Services.AddSingleton<FactionService>();
 builder.Services.AddSingleton<TerrainService>();
+builder.Services.AddSingleton<UnitService>();
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull;

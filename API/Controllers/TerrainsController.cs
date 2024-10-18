@@ -23,7 +23,7 @@ public class TerrainsController: ControllerBase
     [HttpGet("allTerrains")]
     public async Task<ActionResult<List<Terrain>>> GetAllTerrains()
     {
-        var factions = await _terrainService.GetAllTerrainsAsync();
-        return Ok(factions);
+        var terrains = await _terrainService.GetAllTerrainsAsync();
+        return Ok(terrains);
     }
 }
